@@ -1,0 +1,607 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); */
+a {
+    text-decoration: none;
+}
+
+/* css for navbar  */
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    /* font-family: ; */
+    font-family: "Montserrat", sans-serif;
+}
+
+#header {
+    min-height: 100vh;
+
+}
+
+body {
+    scroll-behavior: smooth;
+    /* font-family: sans-serif; */
+    overflow-x: hidden;
+
+}
+
+.goog-logo-link,
+.goog-logo {
+    display: none !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: 500;
+}
+
+nav {
+    background: #ffffff;
+    height: 80px;
+    position: sticky;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 100000;
+    width: 100%;
+}
+
+label img {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 7rem;
+}
+
+label img {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 7rem;
+}
+
+label.logo {
+    font-size: 3rem;
+    line-height: 80px;
+    padding-left: 5rem;
+    font-weight: bold;
+}
+
+label.logo a {
+    color: rgb(8, 8, 8);
+    position: relative;
+    bottom: 3.5rem;
+
+}
+
+nav ul {
+    float: right;
+    margin-right: 2rem;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 6rem;
+    margin: 0 5px;
+}
+
+#google_translate_element select {
+    background-color: #838080;
+    padding: .5rem;
+    color: white;
+    display: inline-block;
+    float: left;
+}
+
+.goog-logo-link {
+    display: none !important;
+}
+
+.goo-te-gadget {
+    color: transparent !important;
+}
+
+.goog-te-banner-frame {
+    display: none !important;
+}
+
+nav ul li a {
+    color: rgb(12, 109, 255);
+    font-size: 18px;
+    padding: 7px 13px;
+    /* font-family: sans-serif; */
+    border-radius: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+nav ul li a:focus {
+    color: rgb(233, 64, 120);
+}
+
+#contact a {
+    background-color: rgb(0, 81, 255);
+    color: white;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-right: 15px;
+    transition: .3s;
+}
+
+#contact a:hover {
+    border: 2px solid rgb(0, 81, 255);
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 81, 255);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.checkbtn {
+    color: black;
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+    color: black;
+}
+
+@media (max-width: 952px) {
+    label.logo {
+        font-size: 3rem;
+        padding-left: 5rem;
+    }
+
+    nav ul li a {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 958px) {
+    #header {
+        width: 100%;
+    }
+
+    .checkbtn {
+        display: block;
+        color: #000000;
+    }
+
+    .myfirstcontainer {
+        background-image: url('img/evgeni-tcherkasski-Gyp9-tIZxiw-unsplash.jpg');
+    }
+
+    nav ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #ffffff;
+        top: 80px;
+        left: -100%;
+        z-index: 100;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    a:hover,
+    a.active {
+        background: none;
+        color: #0082e6;
+    }
+
+    #check:checked~ul {
+        left: 0;
+        color: black;
+    }
+
+}
+
+@media(max-width:360px) {
+    label .logo {
+        font-size: 1rem;
+    }
+}
+/* 1st section head  */
+#main-element{
+    min-height: 80vh;
+    background-color: #e1e1e1;
+    width: 100%;
+    
+}
+
+.main-text-middle{
+  
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+.main-text-middle h1{
+  font-size: 3rem;  
+}
+.search-item {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.2rem;
+}
+.search-item input{
+    border: none;
+    border-radius: .5rem;
+    outline: none;
+    padding: 1.5rem 12rem;
+    
+}
+@media(max-width:758px){
+    .search-item input{
+        padding: 1.5rem 5rem;
+    }
+    .main-text-middle h1{
+        font-size: 2rem;
+    }
+    label.logo a{
+        font-size: 2rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* doctors section  */
+
+.main-head-dc h2{
+    font-size: 3.5rem;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.item-doctor{
+    /* border: 1px solid rgb(0, 0, 0); */
+    box-shadow:5px 5px 5px 5px #ebebeb;
+    width: 50rem;
+    height: 25rem;
+    border-radius: 1.5rem;
+}
+h6{
+    font-weight: 550;
+}
+.lines-doctor{
+display: flex;
+    margin-top: 5rem;
+    justify-content: space-evenly;
+}
+.above-item-doctor{
+    display: flex;
+        justify-content: space-evenly;
+}
+.doctor-name h6{
+    font-size: 2rem;
+margin-top: 2rem;
+}
+.postion{
+    margin-top: 5rem;
+
+}
+.position p{
+    font-size: 1.4rem;
+}
+.location-hospital h6{
+    font-size: 1.9rem;
+
+}
+.exp h6{
+font-size: 1.9rem;
+}
+.exp p{
+    font-size: 1.4rem;
+}
+.surgeries h6{
+    font-size: 1.9rem;
+    
+}
+.surgeries p{
+
+    font-size: 1.4rem;
+}
+.left-item-doctor img{
+    width: 18rem;
+    height:18rem;
+    /* border: 1px solid red; */
+}
+.experiences-main{
+    display: flex;
+    justify-content: space-between;
+}
+.below-item-price p{
+font-size: 1.9rem;
+}
+@media(max-width:758px){
+    .line-one-doctor{
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+    .line-two-doctor{
+        align-items: center;
+        margin: 0;
+        flex-direction: column;
+    }
+    
+    .item-doctor{
+        width: 80%;
+margin-top: 5rem;
+padding: 3.5rem;
+margin: 3rem;
+    }
+
+    h6{
+        text-align: center;
+    }
+    .para-item{
+        text-align: center;
+    }
+    .doctor-name h6{
+        text-align: left;
+    }
+    .location-hospital{
+        margin-top: 2rem;
+    }
+    .location-hospital h6 {
+        text-align: left;
+    }
+    .experiences-main{
+        margin-top: 2rem;
+    }
+    .right-item-doctor{
+      
+    }
+    .location-hospital p{
+        text-align: left;
+    }
+    .experiences-main{
+        width: 80%;
+    }
+    .below-item-price p{
+        text-align: left;
+    }
+    .position p{
+        text-align: left;
+    }
+    .item-doctor{
+        height: 54rem;
+    }
+    .above-item-doctor{
+        flex-direction: column;
+    }
+}
+
+
+/* doctors section  */
+.line-one-doctor {
+    display: flex;
+    margin-top: 5rem;
+    justify-content: space-evenly;
+}
+
+.main-head-dc h2 {
+    font-size: 3.5rem;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.line-two-doctor {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5rem;
+}
+
+.item-doctor {
+    /* border: 1px solid rgb(0, 0, 0); */
+    box-shadow: 5px 5px 5px 5px #ebebeb;
+    width: 50rem;
+    height: 25rem;
+    border-radius: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.above-item-doctor {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.doctor-name h6 {
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+
+.postion {
+    margin-top: 5rem;
+
+}
+
+.position p {
+    font-size: 1.4rem;
+}
+
+.location-hospital h6 {
+    font-size: 1.9rem;
+
+}
+
+.exp h6 {
+    font-size: 1.9rem;
+}
+
+.exp p {
+    font-size: 1.4rem;
+}
+
+.surgeries h6 {
+    font-size: 1.9rem;
+
+}
+
+.surgeries p {
+
+    font-size: 1.4rem;
+}
+
+.left-item-doctor img {
+    width: 18rem;
+    height: 18rem;
+    /* border: 1px solid red; */
+}
+
+.experiences-main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.below-item-price p {
+    font-size: 1.9rem;
+}
+
+@media(max-width:758px) {
+    .line-one-doctor {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+
+    .line-two-doctor {
+        align-items: center;
+        margin: 0;
+        flex-direction: column;
+    }
+
+    .item-doctor {
+        width: 80%;
+        margin-top: 5rem;
+        padding: 3.5rem;
+        margin: 3rem;
+    }
+
+    h6 {
+        text-align: center;
+    }
+
+    .para-item {
+        text-align: center;
+    }
+
+    .doctor-name h6 {
+        text-align: left;
+    }
+
+    .location-hospital {
+        margin-top: 2rem;
+    }
+
+    .location-hospital h6 {
+        text-align: left;
+    }
+
+    .experiences-main {
+        margin-top: 2rem;
+    }
+
+    .right-item-doctor {}
+
+    .location-hospital p {
+        text-align: left;
+    }
+
+    .experiences-main {
+        width: 80%;
+    }
+
+    .below-item-price p {
+        text-align: left;
+    }
+
+    .position p {
+        text-align: left;
+    }
+
+    .item-doctor {
+        height: 54rem;
+    }
+.lines-doctor{
+    flex-direction: column;
+    align-items: center;
+}
+    .above-item-doctor {
+        flex-direction: column;
+    }
+}
+/* 1st section head end */
+/* footer  */
+#footer {
+    background-color: #e1f5ff;
+}
+
+.main-footer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-items {
+    padding: 2rem;
+}
+
+.para {
+    margin-top: 1.5rem;
+}
+
+.footer-items h4 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.para p {
+    font-size: 1.3rem;
+    padding: .4rem;
+}
+
+@media(max-width:758px) {
+    .main-footer {
+        flex-direction: column;
+        align-items: center;
+    }
+}

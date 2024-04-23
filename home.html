@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="https://kit.fontawesome.com/b7dd379cbd.js" crossorigin="anonymous"></script>
+<Style>
+   li,a{
+        cursor: pointer;
+    }
+</Style>
+<link rel="stylesheet" href="../css/style.css">
+<body>
+
+    <!-- {{!-- header  --}} -->
+    <section id="header">
+        <div class="navbar">
+<nav >
+<input type="checkbox" id="check">
+<label for="check" class="checkbtn">
+    <i class="fas fa-bars logo-icon"></i>
+   
+</label>
+        <label class="logo" style="font-family: sans-serif;">medconnect</label>
+        <ul>
+            <!-- <li id="google_translate_element"></li> -->
+            <li  class="home"><a >Home</a></li>
+            <!-- <li  class="info"><a >Info</a></li> -->
+            
+            <li class="api" id="google_translate_element">
+                
+            </li>
+            <li  class="gallery"><a >Gallery</a></li>
+            <li  class="about"><a >About us</a></li>
+            <li   class="contact" id="contact"><a >Contact</a></li>
+        </ul>
+    </nav>
+        </div>
+
+        <div class="move">
+        <marquee id="movetext" behavior="move"  direction="left">We offers you the best medical facilties in delhi and certifed with in the new york times
+        </marquee>
+        </div>
+<div class="main">
+
+        <p>Most Trusted platform</p>
+        <h1 >Welcome to the krygistan </h1>
+</div>
+
+<div class="wrapper">
+    <p>Available treatments</p>
+    <div class="words">
+        <span>daily Checkups</span>
+        <span>Certified Doctors</span>
+        <span>Cancer problems</span>
+        <span>Rectum repair</span>
+        <span>Bone and Joints</span>
+    </div>
+</div>
+<!-- {{!-- <div class="btn-section">
+    <button class="btn-head-1">Know More</button>
+</div> --}} -->
+    </section>
+
+
+        <section id="satisfiedpatient">
+<h2 class="patient">Our Satisfied patient</h2>
+<p>Our services is loved by all over the country </p>
+
+<div class="row-items">
+
+    <div class="col-items first">
+        <video controls src="../video/Copyright_Free_Video_Of_Happy_Man_l_Free_Stock_Video(360p).mp4">play</video>
+        </div>
+        
+    <div class="col-items second">
+        <video controls src="../video/Doctors_and_Hospital_Stock_Footage(360p).mp4"></video>
+    </div>
+
+    <div class="col-items third">
+        <video controls src="../video/Surgery_in_Hospital_3___Stock_Footage___Videohive(360p).mp4"></video>
+    </div>
+</div>
+    <div class="link-gallery">
+        <a href="/gallery">See more</a>
+    </div>
+        </section>
+
+        <!-- {{!-- section for our doctors  --}} -->
+        <section id="our-doctors">
+            <h2>Our Best Doctors From India </h2>
+            <p>Our Doctors is well experienced from india with great experience</p>
+
+            <div class="main-container">
+
+<div class="sub-container-first">
+<button class="speacial-btn">Specialities</button>
+<div class="main-head-speacial">
+    <div class="container-video-1">
+
+<div class="icon-div div-1-icon">
+
+    <a   onclick="func1()"  href="">Bone And Joints</a> <i onclick="runbhai1()"   class="fa-solid fa-2x fa-plus icon icon-first"></i>
+    <br>
+    
+    
+</div>
+
+    <div class="my-video">
+        
+    <video class="plus-video first-video" controls
+        src="../Video_Background_Stock_Footage_Free_(_Hospital,_hospital,_doctor_prescribes,_diagnosis_)(360p).mp4"></video>
+    <p class="para-video-click">
+        The Centre of Excellence in Orthopaedics and Joint Replacement is a state of the art facility at Aakash Healthcare;
+        considered among the best orthopaedic hospitals in Delhi. The Centre provides systemic treatment and care for all
+    </p>
+    </div>
+    </div>
+<div class="div-con-2 icon-div">
+<div class="container-video-2">
+
+    <a   onclick="func2()" href="">Asthma Patient</a>
+   
+    <i onclick="runbhai2()" class="fa-solid fa-2x fa-plus icon icon-second"></i>
+    <div class="my-video">
+    
+        <video class="plus-video second-video" controls
+            src="../video/Video_Background_Stock_Footage_Free_(_Hospital,_hospital,_doctor_prescribes,_diagnosis_)(360p).mp4"></video>
+        <p class="para-video-click">
+            The Centre of Excellence in Orthopaedics and Joint Replacement is a state of the art facility at Aakash
+            Healthcare;
+            considered among the best orthopaedic hospitals in Delhi. The Centre provides systemic treatment and care for
+            all
+        </p>
+    </div>
+</div>
+</div>
+<div class="container-video-3">
+<div class="icon-div div-icon-3">
+
+    <a   onclick="func3()" href="">Heart Specialities</a><i onclick="runbhai3()" class="fa-solid fa-2x fa-plus icon"></i>
+</div>
+<div class="my-video">
+
+    <video class="plus-video   third-video" controls
+        src="../video/Video_Background_Stock_Footage_Free_(_Hospital,_hospital,_doctor_prescribes,_diagnosis_)(360p).mp4"></video>
+    <p class="para-video-click">
+        The Centre of Excellence in Orthopaedics and Joint Replacement is a state of the art facility at Aakash
+        Healthcare;
+        considered among the best orthopaedic hospitals in Delhi. The Centre provides systemic treatment and care for
+        all
+    </p>
+</div>
+</div>
+<div class="icon-div div-icon-4">
+
+    <a   onclick="func4()" href="">Liver Doctor</a><i class="fa-solid fa-2x fa-plus icon"></i>
+</div>
+<div class="icon-div div-icon-5">
+
+    <a   onclick="func5()" href="">Kidney Transplant</a><i class="fa-solid fa-2x fa-plus icon"></i>
+</div>
+<div class="icon-div div-icon-6">
+
+    <a   onclick="func6()" href="">Viral diseases</a><i class="fa-solid fa-2x fa-plus icon"></i>
+</div>
+<div class="icon-div div-icon-7">
+
+    <a   onclick="func7()" href="">Eyes Doctor</a><i class="fa-solid fa-2x fa-plus icon"></i>
+</div>
+<div class="icon-div div-icon-8">
+
+    <a   onclick="func8()" href="">Neurology Suregry</a><i class="fa-solid fa-2x fa-plus icon"></i>
+</div>
+</div>
+</div>
+
+<div class="sub-container-second">
+<div class="profiles profile-1">
+    <video controls src="../video/Video_Background_Stock_Footage_Free_(_Hospital,_hospital,_doctor_prescribes,_diagnosis_)(360p).mp4"></video> <br> 
+
+    <p class="para-click">
+        The Centre of Excellence in Orthopaedics and Joint Replacement is a state of the art facility at Aakash Healthcare;
+considered among the best orthopaedic hospitals in Delhi. The Centre provides systemic treatment and care for all
+</p>
+</div>
+
+<div class="profiles profile-2"><video controls src="../video/Doctor_Checking_A_Patient_Stock_Video(360p).mp4"></video> <br><p class="para-click">orthopaedic complications and joint issues. Aakash is the top orthopaedic hospital in Dwarka, and some of Delhi’s best
+orthopaedic surgeons are available for any kn....</p> </div>
+
+<div class="profiles profile-3"><video controls src="../video/Doctor_Listening_To_Teen's_Heartbeat__Stock_Video(360p).mp4"></video> <br> <p class="para-click">The department of Neurosciences at Aakash Healthcare's delivers comprehensive Diagnostic and Therapeutic Neurology
+services around the clock, following evidence-based practices that follow internationally accepted guidelines</p></div>
+
+<div class="profiles profile-4"><video controls src="../video/liver_free_stock_video_100%#nocopyrightvideostock_liver_#liver_#freestockvideo(360p).mp4"></video><br><p class="para-click"> contemporary times cancer care has experienced a paradigm shift and is all about comprehensive care, which requires
+commitment, expertise and a strong spirit</p></div>
+
+<div class="profiles profile-5"><video controls src="../video/Biology_of_the_Kidneys_and_Urinary_Tract___Merck_Manual_Consumer_Version(360p).mp4"></video><br><p class="para-click">he term "cardiology" is derived from the Greek words "cardia" (heart) and "logy" (study of). Cardiology deals with
+disorders that affect the heart and even other parts of the circulatory system.</p></div>
+
+<div class="profiles profile-6"><video controls src="../video/Having_a_fever_free_stock_video(360p).mp4"></video> <br> <p class="para-click">The department specializes in preventing, diagnosing and treating liver and gastrointestinal tract disorders. These
+include the diseases of liver, stomach, gall bladder, pancreas, esophagus, small and large intestine</p></div>
+
+<div class="profiles profile-7"><video controls src="../video/Doctor_Checks_Patient's_Eye_Stock_Video(360p).mp4"></video> <br><p class="para-click">The liver is a digestive organ found only in vertebrates that detoxifies various metabolites, synthesizes proteins, and
+produces biochemicals required for digestion and growth. It is a cone shaped dark reddish-brown organ</p></div>
+
+<div class="profiles profile-8"><video controls src="../video/Doctor_In_Neuroscience_Centre_Stock_Video(360p).mp4"></video><br><p class="para-click">In present day Chronic Kidney Disease is considered as a major medical problem and a silent killer worldwide. The
+Department of Renal Sciences and Kidney Transplantation is dedicated to provide the highest quality care for patients
+with renal disorders. Our multidisciplinary team of Nephrologists,</p></div>
+</div>
+            </div>
+        </section>
+<!-- {{!-- // testimonials section  --}} -->
+<section id="testimonials">
+    <h1>Testimonials</h1>
+    <p id="my-p">see what our clients says about us</p>
+    <div class="main-testimonials-items">
+        <div class="test-itmes first-item"><p>I was affected from tuberclosis after getting medconnect services i am totally fine </p> <br> <strong>ramesh</strong> </div>
+        <div class="test-itmes first-item"><p>medconnect services is really commendable with the very affordable rates </p><br><strong>kamlesh</strong></div>
+        <div class="test-itmes first-item"><p>My Mother was affected from kidney problem after getting medconnect services she is totally fine</p> <br> <strong>suresh</strong> </div>
+    </div>
+</section>
+<!-- {{!-- {{>footer}} --}} -->
+<footer>
+    <div class="main-footer">
+        <div class="row-footer"><h2>Contact details</h2>
+        <a href="">9967890689</a>
+        <a href=""></a>
+        <a href=""></a>
+        <a href=""></a>
+        </div>
+    </div>
+</footer>
+</body>
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script>
+    function googleTranslateElementInit(){
+        new google.translate.TranslateElement({
+            pageLanguage:"en"
+        },
+        'google_translate_element'
+        )
+    }
+</script>
+<script src="../js/script.js">
+</script>
+</html>

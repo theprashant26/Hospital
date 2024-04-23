@@ -1,0 +1,505 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); */
+a {
+    text-decoration: none;
+}
+
+/* css for navbar  */
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    /* font-family: ; */
+    font-family: "Montserrat", sans-serif;
+}
+
+#header {
+    min-height: 100vh;
+
+}
+
+body {
+    scroll-behavior: smooth;
+    /* font-family: sans-serif; */
+    overflow-x: hidden;
+
+}
+
+.goog-logo-link,
+.goog-logo {
+    display: none !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: 500;
+}
+
+nav {
+    background: #ffffff;
+    height: 80px;
+    position: sticky;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 100000;
+    width: 100%;
+}
+
+label img {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 7rem;
+}
+
+label img {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 7rem;
+}
+
+label.logo {
+    font-size: 3rem;
+    line-height: 80px;
+    padding-left: 5rem;
+    font-weight: bold;
+}
+
+label.logo a {
+    color: rgb(8, 8, 8);
+position: relative;
+bottom: 3.5rem;
+}
+
+nav ul {
+    float: right;
+    margin-right: 2rem;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 60px;
+    margin: 0 5px;
+}
+
+#google_translate_element select {
+    background-color: #838080;
+    padding: .5rem;
+    color: white;
+    display: inline-block;
+    float: left;
+}
+
+.goog-logo-link {
+    display: none !important;
+}
+
+.goo-te-gadget {
+    color: transparent !important;
+}
+
+.goog-te-banner-frame {
+    display: none !important;
+}
+
+nav ul li a {
+    color: rgb(12, 109, 255);
+    font-size: 18px;
+    padding: 7px 13px;
+    /* font-family: sans-serif; */
+    border-radius: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+nav ul li a:focus {
+    color: rgb(233, 64, 120);
+}
+
+#contact a {
+    background-color: rgb(0, 81, 255);
+    color: white;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-right: 15px;
+    transition: .3s;
+}
+
+#contact a:hover {
+    border: 2px solid rgb(0, 81, 255);
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 81, 255);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.checkbtn {
+    color: black;
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+    color: black;
+}
+
+@media (max-width: 952px) {
+    label.logo {
+        font-size: 3rem;
+        padding-left: 5rem;
+    }
+
+    nav ul li a {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 958px) {
+    #header {
+        width: 100%;
+    }
+
+    .checkbtn {
+        display: block;
+        color: #000000;
+    }
+
+    .myfirstcontainer {
+        background-image: url('img/evgeni-tcherkasski-Gyp9-tIZxiw-unsplash.jpg');
+    }
+
+    nav ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #ffffff;
+        top: 80px;
+        left: -100%;
+        z-index: 100;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    a:hover,
+    a.active {
+        background: none;
+        color: #0082e6;
+    }
+
+    #check:checked~ul {
+        left: 0;
+        color: black;
+    }
+
+}
+
+@media(max-width:360px) {
+    label .logo {
+        font-size: 1rem;
+    }
+}
+/* 1st page content  */
+#main-container{
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgb(255, 237, 222);
+}
+.main-container-item{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.left-items{
+    margin-top: 7rem;
+    margin-left: 4rem;
+}
+.left-items h2{
+font-size: 5rem;
+width: 80%;
+
+}
+.left-items p{
+    width: 65%;
+    font-size: 2.9rem;
+    padding-top: 4rem;
+}
+.left-items button{
+    background-color: rgb(216, 165, 121);
+    padding: 1.5rem ;
+    border: none;
+    outline: none;
+    border-radius: 3rem;
+    margin-top: 3rem;
+}
+.left-items button a{
+    color: white;
+    font-size: 2rem;
+}
+.right-item img{
+    width: 50rem;
+    height: 50rem;
+    margin-left: 5rem;
+    margin-top: 8rem;
+}
+@media(max-width:991px){
+    .main-container-item{
+        flex-direction: column;
+    }
+    html{
+        /* font-size: 15%; */
+    }
+    .left-items h2{
+
+    }
+}
+@media(max-width:756px){
+    html{
+        font-size: 50%;
+
+    }
+    .left-items h2{
+        text-align: center;
+        font-size: 4rem;
+        width: 100%;
+    }
+    .left-items p{
+       text-align: center; 
+       font-size: 2rem;
+       padding-bottom: 3rem;
+       width: 100%;
+    }
+    
+}
+@media(max-width:575px){
+    .left-items h2{
+        font-size: 3rem;
+        text-align: center;
+    }
+}
+/* 1st page content end */
+/* search main  */
+.treatment-packages {
+    margin-top: 4rem;
+}
+
+.package {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2rem;
+}
+
+.item-package {
+    box-shadow: 5px 5px 5px 5px #dcdcdc;
+    border: 1px solid rgb(255, 255, 255);
+    width: 55rem;
+    border-radius: 1.5rem;
+
+    height: 30rem;
+}
+
+.right-item-profile {
+    margin: 0;
+}
+
+.above-item {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.left-item-img img {
+    width: 25rem;
+    height: 25rem;
+    border-radius: 3.5rem;
+    padding: 2rem;
+}
+
+.below-item-price {
+    border-top: 1px solid rgb(168, 168, 168);
+    margin: 1rem 2rem;
+}
+
+.right-item-profile {
+    margin-top: 2rem;
+}
+
+.head-name-treatment h1 {
+    font-size: 3rem;
+    margin-top: 6rem;
+    text-align: center;
+}
+
+h6 {
+    font-size: 1.7rem;
+}
+
+.btn-item {
+    margin-bottom: 4rem;
+}
+
+.btn-cnct {
+    padding: 1rem;
+    background-color: #0082e6;
+    border-radius: 2.5rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #ffffff;
+    /* margin-bottom: -5rem; */
+}
+
+.btn-cnct:hover {
+    color: rgb(255, 255, 255);
+}
+
+.para-item {
+    font-size: 1.3rem;
+}
+
+.heads-treatment {
+    font-size: 1.7rem;
+}
+
+.below-item-price p {
+    font-size: 1.5rem;
+    margin: 0.5rem 1rem;
+}
+
+.durations-main {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.view-more a {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+}
+
+@media(max-width:758px) {
+    .right-item-profile {
+        padding: 2rem;
+    }
+
+    .package {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn-item {
+        margin-bottom: 0;
+        margin: 0;
+    }
+
+    .durations-main {
+        justify-content: space-between;
+        width: 80%;
+    }
+
+    .item-package {
+        width: 95%;
+        height: 60rem;
+        margin-top: 2rem;
+    }
+
+    .above-item {
+        flex-direction: column;
+    }
+
+    .para-item {
+        text-align: center;
+    }
+
+    .hospital-name h6 {
+        text-align: left;
+    }
+
+    .hospital-name p {
+        text-align: left;
+
+    }
+
+    .location .para-item {
+        text-align: left;
+    }
+
+    .below-item-price p {
+        text-align: left;
+    }
+
+    .heads-treatment {
+        margin-top: 2rem;
+        text-align: left;
+    }
+}
+
+/* treatments packages end */
+/* search main end */
+/* footer  */
+#footer {
+    background-color: #e1f5ff;
+}
+
+.main-footer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-items {
+    padding: 2rem;
+}
+
+.para {
+    margin-top: 1.5rem;
+}
+
+.footer-items h4 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.para p {
+    font-size: 1.3rem;
+    padding: .4rem;
+}
+
+@media(max-width:758px) {
+    .main-footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}

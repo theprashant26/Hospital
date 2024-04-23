@@ -1,0 +1,1039 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+ /* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); */
+a{
+    text-decoration: none;
+}
+/* css for navbar  */
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    /* font-family: ; */
+    font-family: "Montserrat", sans-serif;
+}
+
+#header {
+    min-height: 100vh;
+    
+}
+
+body {
+    scroll-behavior: smooth;
+    /* font-family: sans-serif; */
+    overflow-x: hidden;
+ 
+}
+.goog-logo-link,
+.goog-logo {
+    display: none !important;
+}
+h1,h2,h3,h4,h5{
+    font-weight: 500;
+}
+
+nav {
+    background: #ffffff;
+    height: 80px;
+    position: sticky;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 100000;
+    width: 100%;
+}
+label img{
+    width: 7rem;
+    height: 7rem;
+    border-radius: 7rem;
+}
+label img {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 7rem;
+}
+label.logo {
+    font-size: 3rem;
+    padding-left: 5rem;
+    line-height: 80px;
+    
+    font-weight: bold;
+}
+label.logo a{
+    color: rgb(8, 8, 8);
+
+}
+nav ul {
+    float: right;
+    margin-right: 2rem;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 60px;
+    margin: 0 5px;
+}
+#google_translate_element select{
+    background-color: #838080;
+    padding: .5rem;
+    color: white;
+    display: inline-block;
+    float: left;
+}
+.goog-logo-link{
+    display: none !important;
+}
+.goo-te-gadget{
+    color: transparent !important;
+}
+.goog-te-banner-frame{
+    display: none !important;
+}
+nav ul li a {
+    color: rgb(12, 109, 255);
+    font-size: 18px;
+    padding: 7px 13px;
+    /* font-family: sans-serif; */
+    border-radius: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+nav ul li a:focus {
+    color: rgb(233, 64, 120);
+}
+
+#contact a {
+    background-color: rgb(0, 81, 255);
+    color: white;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-right: 15px;
+    transition: .3s;
+}
+
+#contact a:hover {
+    border: 2px solid rgb(0, 81, 255);
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 81, 255);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.checkbtn {
+    color: black;
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+    color: black;
+}
+
+@media (max-width: 952px) {
+    label.logo {
+        font-size: 3rem;
+        padding-left: 5rem;
+    }
+
+    nav ul li a {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 958px) {
+    #header {
+        width: 100%;
+    }
+
+    .checkbtn {
+        display: block;
+        color: #000000;
+    }
+
+    .myfirstcontainer {
+        background-image: url('img/evgeni-tcherkasski-Gyp9-tIZxiw-unsplash.jpg');
+    }
+
+   nav ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #ffffff;
+        top: 80px;
+        left: -100%;
+        z-index: 100;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    a:hover,
+    a.active {
+        background: none;
+        color: #0082e6;
+    }
+
+    #check:checked~ul {
+        left: 0;
+        color: black;
+    }
+
+}
+
+@media(max-width:360px){
+label .logo{
+    font-size: 1rem;
+}
+}
+.main-item-box{
+    background-color: #def4f5;
+    box-shadow: 5px 5px 10px 5px hsl(0, 0%, 90%);
+    width: 85%;
+    overflow-x: hidden;
+    min-height: 60vh;
+   display: flex;
+  /* height: 30rem; */
+   justify-content: space-between;
+   margin: auto;
+   border-radius: 2rem;
+}
+.main-left-item{  
+    padding: 2rem;
+}
+.countries{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 2rem;
+    
+}
+.country img{
+border-radius: 10rem;
+height: 3rem;
+width: 3rem;
+margin-left: -4rem;
+}
+.country{
+    margin-right:  2rem;
+    text-align: center;
+}
+
+.name-country {
+    text-align: center;
+
+    font-size: 1.4rem;
+margin-left: -5rem;
+}
+.main-left-item h1{
+    width: 100%;
+    font-size: 4.2rem;
+    margin-top: 3rem;
+}
+.tag-line {
+    font-size: 2rem;
+    padding-top: 2rem;
+}
+.main-left-item input{
+padding: 1.7rem ;
+border-radius: .6rem;
+margin-top: 2rem;
+border: none;
+outline: none;
+overflow: a;
+}
+.inside-item{
+    display: flex;
+    margin-top: 5rem;
+}
+.inside-item a{
+    background-color: rgb(23, 77, 255);
+    color: white;
+    padding: 2rem 5rem;
+    font-size: 1.5rem;
+    border-radius: 1rem;
+}
+.treatments-ex p{
+    font-size: 1.5rem;
+    padding-left: 2rem;
+    /* padding-top: 2rem; */
+    /* align-items: center; */
+    margin-top: -3rem;
+    width: 65%;
+    
+}
+.main-left-item input:focus{
+border: none;
+    outline: none;
+}
+
+.cont-item{
+    width: 20rem;
+    border-radius: 1.5rem;
+    height: 15rem;
+    box-shadow: 5px 5px 10px 5px hsl(0, 100%, 96%);
+    background-color: rgb(255, 211, 218);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: 
+    center;
+    
+    
+}
+.cont-item h5{
+    font-size: 2rem
+}
+.cont-item p{
+    font-size: 2.5rem;
+}
+.lines-conts{
+    display: flex;
+
+    padding: 1rem;
+    justify-content: space-between;
+}
+.img-cont img{
+    margin:0rem 2rem;
+    width: 25rem;
+    border-radius: 1.5rem;
+    height: 15rem;
+    
+}
+.line-two{
+    display: flex;
+    justify-content: center;
+}
+.img-cont-2 img {
+    
+    width: 25rem;
+    height: 15rem;
+}
+@media(max-width:1250px) {
+    html {
+        font-size: 50%;
+    }
+
+    .main-left-item h1 {
+
+        width: 100%;
+    }
+}
+@media(max-width:991px) {
+    html {
+        font-size: 46%;
+    }
+
+    .main-left-item h1 {
+
+        width: 100%;
+    }
+        .main-left-item input {
+            padding: 1.7rem 10rem;
+        }
+        .treatments-ex p{
+            width: 100%;
+        }
+}
+
+@media (max-width:767px){
+    html{
+      font-size: 45%;
+        text-align: center;
+    }
+   
+ .main-left-item h1 {
+
+     width: 100%;
+ }
+    .right-items{
+        display: none;
+    }
+ 
+    .main-left-item input{
+        padding: 1.7rem 10rem;
+    }
+    .inside-item{
+        flex-direction: column;
+    }
+    .treatments-ex p{
+        margin-top: 4rem;
+        width: 100%;
+
+    }
+}
+@media(max-width:575px){
+    html{
+        font-size: 40%;
+    }
+}
+ .main-left-item h1 {
+
+     width: 100%;
+ }
+@media(max-width:427px){
+    html{
+        font-size: 43%;
+ 
+    }
+          .main-left-item input {
+              padding: 1.7rem 5rem;
+          }
+    
+          
+        
+}
+@media(max-width:375px){
+    html{
+        font-size: 35%;
+    }
+         
+}
+/* profile section  */
+.main-one{
+    margin-top: 6rem;
+}
+.profile-container{
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+}
+.first-container{
+   justify-content: space-between;
+}
+.second-container{
+    justify-content: flex-end;
+    margin-top: 4rem;
+}
+
+.profiles{
+    /* background-color: rgb(44, 44, 44); */
+    width: 40em;
+    height: 45rem;
+box-shadow: 5px 5px 10px 5px hsl(0, 0%, 90%);
+    border-radius: .4rem;
+    margin: 0rem 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.info-profile h2{
+    margin-left: 2rem;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: left;
+}
+.img img{
+    width: 40rem;
+    border-radius: 4rem;
+    height: 45rem;
+    padding: 2rem 3rem;
+}
+
+.info-profile p{
+    /* width: 80rem; */
+    text-align: left;
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    text-justify: distribute;
+}
+.third-container{
+
+    margin-top: 4rem;
+}
+@media(max-width:758px){
+ .profile-container{
+    flex-direction: column;
+    /* margin-top: 2rem; */
+ }  
+ .second-container{
+    flex-direction: column-reverse;
+ }
+ .info-profile{
+    margin-top: 2rem;
+ }
+}
+/* profile section end */
+
+/* second part cards items  */
+
+
+.card-container{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 4rem;
+    
+}
+
+.cards{
+    box-shadow: 5px 5px 10px 5px hsl(0, 57%, 90%);
+    width: 50rem;
+    height: 30rem;
+    display: flex;
+margin: 4rem;
+    justify-content: space-between;
+    background-color: rgb(255, 223, 228);
+    border-radius: 1.2rem;
+}
+.second-card{
+    background-color: rgb(251, 237, 237);
+
+}
+.left-cards{
+    padding: 2rem;
+    margin-top: 1.5rem;
+}
+.left-cards h3{
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+    margin-top: 1.5rem;
+}
+.left-cards p{
+    font-size: 1.6rem;
+
+    width: 100%;
+line-height: 2.5rem;
+}
+.images img{
+    width: 13rem;
+    height: 12rem;
+    margin-top: 2rem;
+    margin-right: 2rem;
+    border-radius: 2rem;
+}
+@media (max-width:758px){
+ .card-container{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+} 
+.left-cards p{
+text-align: left;
+}  
+.cards{
+    width: 90%;
+    margin-top: 2rem
+
+ }
+}
+/* second part cards items end */
+/* treatments packages  */
+.treatment-packages{
+margin-top: 4rem;
+}
+.package{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2rem;
+    margin-top: 6rem;
+}
+.item-package{
+    box-shadow: 5px 5px 5px 5px #dcdcdc;
+    border: 1px solid rgb(255, 255, 255);
+    width: 55rem;
+    border-radius: 1.5rem;
+   
+    height: 30rem;
+}
+.right-item-profile{
+    margin: 0;
+}
+.above-item{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.left-item-img img{
+width: 25rem;
+height: 25rem;
+border-radius: 3.5rem;
+padding: 2rem;
+}
+.below-item-price{
+    border-top: 1px solid rgb(168, 168, 168);
+    margin:1rem 2rem;
+}
+.right-item-profile{
+    margin-top: 2rem;
+}
+.head-name-treatment h1{
+    font-size: 3rem;
+    margin-top: 6rem;
+    text-align: center;
+}
+h6{
+    font-size: 1.7rem;
+}
+.btn-item{
+    margin-bottom: 4rem;
+}
+.btn-cnct{
+    padding: 1rem;
+    background-color: #0082e6;
+    border-radius: 2.5rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #ffffff;
+/* margin-bottom: -5rem; */
+}
+.btn-cnct:hover{color: rgb(255, 255, 255);}
+.para-item{
+    font-size: 1.3rem;
+}
+
+.heads-treatment {
+    font-size: 1.7rem;
+}
+
+.below-item-price p{
+    font-size: 1.5rem;
+    margin: 0.5rem 1rem;
+}
+.durations-main{
+    display: flex;
+    justify-content: space-between;
+
+}
+.view-more a{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 6rem;
+    font-size: 2.5rem;
+}
+@media(max-width:758px){
+    .right-item-profile{
+        padding: 2rem;
+    }
+    .package{
+        flex-direction: column;
+        align-items: center;
+    }
+    .btn-item{
+        margin-bottom: 0;
+        margin: 0;
+    }
+    .durations-main{
+        justify-content: space-between;
+        width: 80%;
+    }
+    .item-package{
+        width: 95%;
+        height: 60rem;
+        margin-top: 2rem;
+    }
+    .above-item{
+        flex-direction: column;
+    }
+    .para-item{
+        text-align: center;
+    }
+    .hospital-name h6{
+        text-align: left;
+    }
+    .hospital-name p{
+        text-align: left;
+
+    }
+    .location .para-item{
+        text-align: left;
+    }
+    .below-item-price p{
+        text-align: left;
+    }
+    .heads-treatment{
+        margin-top: 2rem;
+        text-align: left;
+    }
+}
+
+/* treatments packages end */
+/* testimonials sections  */
+#testimonials{
+    min-height: 80vh; 
+    margin-top: 6rem; 
+    /* height: 200rem; */
+}
+.box-container{
+    background-color: rgb(255, 229, 233);
+    width: 95%;
+    display: flex;
+    justify-content: space-evenly;
+    /* height: 150vh; */
+    margin: auto;
+    border-radius: 2rem;
+}
+.left-items-text h1{
+    /* padding: 8rem; */
+    padding-left: 8rem;
+    padding-top: 8rem;
+    padding-bottom: 4rem;
+    font-size: 4rem;
+    width: 90%;
+    /* font-family: Arial, Helvetica, sans-serif; */
+   
+ 
+}
+.left-items-text a{
+    color: rgb(94, 131, 255);
+    text-align: center;
+    padding: 8rem;
+    font-size: 2rem;
+    display: inline-block;
+    width: 100%;
+    margin-top: 3rem;
+}
+.right-items-videos{
+    display: flex;
+    justify-content: space-evenly;
+}
+.video-sec-1 video,.video-sec-2 video {
+    width: 25rem;
+    padding-right: 2rem;
+    box-shadow: 5px 5px 10px 5px hsl(0, 0%, 90%);
+    height: 25rem;
+}
+.main{
+    margin-right: 2rem;
+    margin-top: 2rem;
+}
+iframe{
+    border-radius: 1.4rem;
+    box-shadow: 5px 5px 10px 5px hsl(0, 100%, 88%);
+}
+.main p{
+font-size: 1.5rem;
+text-align: center;
+padding-top: .5rem;
+}
+@media(max-width:758px){
+    html{
+      
+    }
+    .box-container{
+        flex-direction: column;
+        height: 205vh;
+    }
+    .left-items-text h1{
+ 
+        padding-top: 0rem;
+        text-align: center;
+    }
+        .left-items-text a {
+            padding: 0;
+        }
+    .right-items-videos{
+        flex-direction: column;
+     
+        align-items: center;
+        
+    }
+        .video-sec-1 video,
+        .video-sec-2 video{
+            width: 30rem;
+        }
+}
+@media(max-width:427px){
+    .left-items-text h1{
+        /* font-size: 3rem; */
+        margin-right: 59rem;
+    }
+}
+/* testimonials sections end */
+
+/* hospital section  */
+#hospital{
+    min-height: 60vh;
+margin-top: 4rem;
+}
+#hospital h2{
+margin-top: 2rem;
+
+font-size: 3rem;
+text-align: center;
+}
+.main-head{
+    display: flex;
+    justify-content: space-around;
+}
+.link-item{
+    margin-top: 2rem;
+    text-align: center;
+}
+.link-item a{
+font-size: 3rem;
+text-align: center;
+
+color: blue;
+}
+.items-hospital{
+display: flex;
+justify-content: space-around;
+margin-top: 5rem;
+}
+.items img{
+width: 25rem;
+height: 20rem;
+}
+.items{
+    /* border:1px solid rgb(187, 187, 187); */
+    box-shadow: 5px 5px 10px 5px hsl(0, 0%, 79%);
+    border-radius: 1rem;
+    padding-bottom: 1rem;
+    
+    
+}
+.items p{
+    margin: .5rem;
+    font-size: 1.5rem;
+}
+@media(max-width:758px){
+   
+    html{
+      
+    }
+    .items-hospital{
+        flex-direction: column;
+        align-items: center;
+       
+    }
+    .items{
+        width: 85%;
+        background-color: #f1f1f1;
+        margin-top: 2rem;
+    }
+    .items img{
+        width: 100%;
+        margin: auto;
+        display: block;
+        padding-top: 1rem;
+    }
+    .items p{
+        text-align: center;
+    }
+    .main-head{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/* hospital section end */
+/* doctors section  */
+.line-one-doctor{
+    display: flex;
+    margin-top: 5rem;
+    justify-content: space-evenly;
+}
+.main-head-dc h2{
+    font-size: 3.5rem;
+    text-align: center;
+    margin-top: 5rem;
+}
+.line-two-doctor{
+    display: flex;
+        justify-content: space-evenly;
+        margin-top: 5rem;
+}
+.item-doctor{
+    /* border: 1px solid rgb(0, 0, 0); */
+    box-shadow:5px 5px 5px 5px #ebebeb;
+    width: 50rem;
+    height: 25rem;
+    border-radius: 1.5rem;
+}
+.above-item-doctor{
+    display: flex;
+        justify-content: space-evenly;
+}
+.doctor-name h6{
+    font-size: 2rem;
+margin-top: 2rem;
+}
+.postion{
+    margin-top: 5rem;
+
+}
+.position p{
+    font-size: 1.4rem;
+}
+.location-hospital h6{
+    font-size: 1.9rem;
+
+}
+.exp h6{
+font-size: 1.9rem;
+}
+.exp p{
+    font-size: 1.4rem;
+}
+.surgeries h6{
+    font-size: 1.9rem;
+    
+}
+.surgeries p{
+
+    font-size: 1.4rem;
+}
+.left-item-doctor img{
+    width: 18rem;
+    height:18rem;
+    /* border: 1px solid red; */
+}
+.experiences-main{
+    display: flex;
+    justify-content: space-between;
+}
+.below-item-price p{
+font-size: 1.9rem;
+}
+@media(max-width:758px){
+    .line-one-doctor{
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+    .line-two-doctor{
+        align-items: center;
+        margin: 0;
+        flex-direction: column;
+    }
+    
+    .item-doctor{
+        width: 80%;
+margin-top: 5rem;
+padding: 3.5rem;
+margin: 3rem;
+    }
+
+    h6{
+        text-align: center;
+    }
+    .para-item{
+        text-align: center;
+    }
+    .doctor-name h6{
+        text-align: left;
+    }
+    .location-hospital{
+        margin-top: 2rem;
+    }
+    .location-hospital h6 {
+        text-align: left;
+    }
+    .experiences-main{
+        margin-top: 2rem;
+    }
+    .right-item-doctor{
+      
+    }
+    .location-hospital p{
+        text-align: left;
+    }
+    .experiences-main{
+        width: 80%;
+    }
+    .below-item-price p{
+        text-align: left;
+    }
+    .position p{
+        text-align: left;
+    }
+    .item-doctor{
+        height: 54rem;
+    }
+    .above-item-doctor{
+        flex-direction: column;
+    }
+}
+/* doctors section end */
+/* award section  */
+#award-section{
+    min-height: 50vh;
+    background-color: rgb(255, 249, 235);
+}
+.main-items-award{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.left-award-item{
+}
+.right-award-item{
+
+    margin: 2rem;
+}
+.right-award-item video{
+    width: 40rem;
+    background-color: #373737;
+    height: 45rem;
+    border-radius: 1.4rem;
+}
+.left-award-item h1{
+ 
+   padding: 10rem 5rem;
+    font-size: 5rem;
+}
+@media(max-width:758px){
+    .main-items-award{
+        flex-direction: column;
+    }
+}
+/* award section end */
+/* footer section start  */
+/* footer  */
+#footer {
+    background-color: #e1f5ff;
+}
+
+.main-footer {
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer-items{
+    padding: 2rem;
+}
+.para{
+    margin-top: 1.5rem;
+}
+.footer-items h4{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.para p{
+    font-size: 1.3rem;
+    padding: .4rem;
+}
+@media(max-width:758px){
+    .main-footer{
+        flex-direction: column;
+        text-align: center;
+    }
+}
+/* footer end */
