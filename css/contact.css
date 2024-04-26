@@ -70,19 +70,16 @@ label img {
     height: 10rem;
     border-radius: 7rem;
 }
-
 label.logo {
-    font-size: 1rem;
-    line-height: 80px;
+    font-size: 3rem;
     padding-left: 5rem;
+    line-height: 80px;
+    
     font-weight: bold;
 }
-
-label.logo a {
+label.logo a{
     color: rgb(8, 8, 8);
-font-size: 3rem;
-position: relative;
-bottom: 3.5rem;
+
 }
 
 nav ul {
@@ -275,18 +272,20 @@ label.logo a {
  }
 
  .container {
-     background-color: #ffffff;
+     background-color: #6f6df4;
      width: 90%;
 
      min-width: 420px;
      padding: 35px 50px;
      transform: translate(-50%, -50%);
      position: relative;
-     left: 50%;
+     left: 40%;
+     right: 40%;
      /* top: 80%; */
      border-radius: 10px;
      box-shadow: 20px 30px 25px rgba(0, 0, 0, 0.15);
      padding-top: 10rem;
+     margin-top: 5%;
  }
 
  h1 {
@@ -320,7 +319,7 @@ label.logo a {
  }
 
  label {
-     color: #1c093c;
+     color: #fff;
      font-size: 20px;
  }
 
@@ -348,11 +347,13 @@ label.logo a {
  button {
      border: none;
      padding: 10px 20px;
-     background: linear-gradient(130deg,
-             #6f6df4,
-             #4c46f5);
+     background: #4c46f5;
      color: #ffffff;
      border-radius: 3px;
+ }
+ .submitbutton {
+    font-size: medium;
+
  }
 
  @media(max-width:858px) {
@@ -368,7 +369,7 @@ label.logo a {
          font-size: 5rem;
      }
      form{
-        width: 80%;
+        width: 60%;
      }
  }
 
@@ -398,6 +399,9 @@ label.logo a {
      /* align-items: center; */
      border-radius: 10px;
      min-width: 420px;
+ }
+ .forminp {
+    font-size: 15px;
  }
 
  @media(max-width:858px) {
