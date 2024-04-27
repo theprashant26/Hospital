@@ -219,7 +219,7 @@ label.logo a {
         font-size: 1rem;
     }
 }
-#Contact-us {
+/* #Contact-us {
      background-image: url('../img/med2.jpg');
      background-position: center;
      background-size: cover;
@@ -227,7 +227,29 @@ label.logo a {
      min-height: 90vh;
 
      background-repeat: no-repeat;
- }
+ } */
+ .banner {
+    width: 100%;
+    /* max-width: 1000px; */
+    height: auto;
+    /* background-color: #3498db; */
+    color: #fff;
+    text-align: center;
+    /* padding: 20px; */
+    box-sizing: border-box;
+  }
+
+  .banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .banner {
+      padding: 10px;
+    }
+  }
 
  h1 {
      /* z-index: 10000000000; */
