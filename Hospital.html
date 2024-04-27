@@ -7,10 +7,12 @@
     <link rel="stylesheet" href="css/Hospital.css">
 <script src="https://kit.fontawesome.com/b7dd379cbd.js" crossorigin="anonymous"></script>
 <link rel="shortcut icon" href="img/new-logo.png">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
 
 
 </head>
-<body>
+<body class="bodybgcolor">
      <!-- <section id="header"> -->
         <div class="navbar">
 <nav >
@@ -37,7 +39,7 @@
     </nav>
         </div>
 <!-- first page section  -->
-<section id="first-page">
+<!-- <section id="first-page">
     <div class="main-container">
         <div class="head">
 
@@ -50,7 +52,7 @@
     </div>
 
     
-</section>
+</section> -->
 
 <!-- first page section end -->
 <!-- second start  -->
@@ -58,11 +60,115 @@
 <section id="hospital">
     <div class="main-head">
         <div class="head-item">
- <h2>Explore The <strong>Top Hospitals</strong> </h2>
-        </div>
-       
+            <h2>Explore The <strong>Top Hospitals</strong> </h2>
+        </div>    
     </div>
-   
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-lg-2 col-sm-3 mb-3">
+                <button class="coll" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">New Delhi</button>
+            </div>
+            <div class="col-lg-2 col-sm-3 mb-3">
+                <button class="coll" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Gurgaon</button>
+            </div>
+            <div class="col-lg-2 col-sm-3 mb-3">
+                <button class="coll" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample2">Noida</button>
+            </div>
+            <div class="col-lg-2 col-sm-3 mb-3">
+                <button class="coll" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample4" aria-expanded="false" aria-controls="multiCollapseExample2">Faridabad</button>
+            </div>
+            <div class="col-lg-2 col-sm-3 mb-3">
+                <button class="coll" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample5" aria-expanded="false" aria-controls="multiCollapseExample2">Greater Noida</button>
+            </div>
+            <div class="col-lg-2 col-sm-3 mb-3">
+                <button class="coll" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample6" aria-expanded="false" aria-controls="multiCollapseExample2">Delhi</button>
+            </div>
+            <div class="row mt-4">
+                <div class="col">
+                  <div class="collapse multi-collapse" id="multiCollapseExample1">
+                    <div class="card card-body">
+                      Some placeholder content for the first collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="collapse multi-collapse" id="multiCollapseExample2">
+                    <div class="card card-body">
+                      Some placeholder content for the second collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                    <div class="container collapse multi-collapse" id="multiCollapseExample3">
+                        <div class="row">
+                          <div class="col-md-3 mb-3 hoscard">
+                            <div class="w-100">
+                              <img src="img/h-1Defence-Colony.jpg" class="card-img-top" alt="Placeholder Image" height="140px">
+                              <div class="card-body">
+                                <h3 class="card-title">Card 1 Title</h3>
+                                <p class="card-text">Some quick example text to show content below the image.</p>
+                                <a href="#" class="btn btn-primary">Get Location</a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-3 mb-3 hoscard">
+                            <div class="w-100">
+                              <img src="img/h-1Defence-Colony.jpg" class="card-img-top" alt="Placeholder Image" height="140px">
+                              <div class="card-body">
+                                <h3 class="card-title">Card 2 Title</h3>
+                                <p class="card-text">Some quick example text to show content below the image.</p>
+                                <a href="#" class="btn btn-primary">Get Location</a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-3 mb-3 hoscard">
+                            <div class="w-100">
+                              <img src="img/h-1Defence-Colony.jpg" class="card-img-top" alt="Placeholder Image" height="140px">
+                              <div class="card-body">
+                                <h3 class="card-title">Card 3 Title</h3>
+                                <p class="card-text">Some quick example text to show content below the image.</p>
+                                <a href="#" class="btn btn-primary">Get Location</a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-3 mb-3 hoscard">
+                            <div class="w-100">
+                              <img src="img/h-1Defence-Colony.jpg" class="card-img-top" alt="Placeholder Image" height="140px">
+                              <div class="card-body">
+                                <h3 class="card-title">Card 3 Title</h3>
+                                <p class="card-text">Some quick example text to show content below the image.</p>
+                                <a href="#" class="btn btn-primary">Get Location</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col">
+                    <div class="collapse multi-collapse" id="multiCollapseExample4">
+                      <div class="card card-body">
+                        Some placeholder content for the second collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="collapse multi-collapse" id="multiCollapseExample5">
+                      <div class="card card-body">
+                        Some placeholder content for the second collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="collapse multi-collapse" id="multiCollapseExample6">
+                      <div class="card card-body">
+                        Some placeholder content for the second collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                      </div>
+                    </div>
+                  </div>
+              </div>
+        </div>
+    </div>
 <div class="items-hospital">
     <div class="item-1 items">
         <img src="img/h-1Defence-Colony.jpg" alt="">
@@ -137,7 +243,7 @@ Fortis Escorts Hospital
             <!-- footer section  -->
     <!-- footer section  -->
   <section id="footer">
-    <div class="main-footer">
+    <div class="main-footer mt-5">
         <div class="item-one-footer footer-items">
             <h4>Top Treatments</h4>
             <div class="para">
@@ -188,5 +294,6 @@ Fortis Escorts Hospital
   </section>
     <!-- footer section end -->
     <!-- footer section end -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
