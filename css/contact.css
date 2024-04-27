@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@import url('https://fonts.cdnfonts.com/css/noto-sans-math');
 * {
     padding: 0;
     margin: 0;
@@ -8,16 +6,11 @@
     list-style: none;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Times New Roman', Times, serif;
 }
-
-/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); */
-a {
+ /* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); */
+a{
     text-decoration: none;
-}
-label.logo a{
-    text-decoration: none;
-
 }
 /* css for navbar  */
 
@@ -31,26 +24,20 @@ html {
 
 #header {
     min-height: 100vh;
-
+    
 }
 
 body {
     scroll-behavior: smooth;
     /* font-family: sans-serif; */
     overflow-x: hidden;
-
+ 
 }
-
 .goog-logo-link,
 .goog-logo {
     display: none !important;
 }
-
-h1,
-h2,
-h3,
-h4,
-h5 {
+h1,h2,h3,h4,h5{
     font-weight: 500;
 }
 
@@ -64,7 +51,11 @@ nav {
     z-index: 100000;
     width: 100%;
 }
-
+label img{
+    width: 7rem;
+    height: 7rem;
+    border-radius: 7rem;
+}
 label img {
     width: 10rem;
     height: 10rem;
@@ -79,7 +70,7 @@ label.logo {
 }
 label.logo a{
     color: rgb(8, 8, 8);
-
+    text-decoration: none;
 }
 
 nav ul {
@@ -229,11 +220,11 @@ label.logo a {
     }
 }
 #Contact-us {
-     background-image: url('../img/doctors.jpg');
+     background-image: url('../img/med2.jpg');
      background-position: center;
      background-size: cover;
-     /* width: 100%; */
-     min-height: 70vh;
+     width: 100%;
+     min-height: 90vh;
 
      background-repeat: no-repeat;
  }
@@ -250,7 +241,7 @@ label.logo a {
      top: 0;
      width: 100%;
      height: 75vh;
-     background-color: rgba(0, 158, 185, 0.6);
+     /* background-color: rgba(0, 158, 185, 0.6); */
  }
 
  .contact-main-head {
@@ -261,7 +252,7 @@ label.logo a {
  }
 
  .contact-main-head h1 {
-     font-size: 6rem;
+     font-size: 16px;
      color: white;
  }
 
@@ -271,10 +262,10 @@ label.logo a {
      padding-top: 33rem;
  }
 
- .container {
-     background-color: #6f6df4;
+ .ccontainer {
+     /* background-color: #6f6df4; */
      width: 90%;
-
+     font-size: 16px;
      min-width: 420px;
      padding: 35px 50px;
      transform: translate(-50%, -50%);
@@ -293,14 +284,13 @@ label.logo a {
      text-align: center;
      color: #1c093c;
  }
-
  p {
      position: relative;
      margin: auto;
      width: 100%;
      text-align: center;
      color: #606060;
-     font-size: 14px;
+     font-size: 18px;
      font-weight: 400;
  }
 
@@ -434,3 +424,59 @@ label.logo a {
  h4 {
      font-size: 2.2rem;
  }
+ /* Custom CSS for medical theme */
+ .medical-contact {
+    background-color: #f0f8ff; /* Light blue */
+    padding: 50px 0;
+    text-align: center;
+  }
+  .medical-contact h2 {
+    color: #007bff; /* Blue */
+  }
+  .medical-contact p {
+    color: #333; /* Dark gray */
+  }
+  .whatsapp-btn {
+    background-color: #25d366; /* WhatsApp green */
+    border-color: #25d366; /* WhatsApp green */
+  }
+  .whatsapp-btn:hover {
+    background-color: #128C7E; /* Darker WhatsApp green on hover */
+    border-color: #128C7E; /* Darker WhatsApp green on hover */
+  }
+.medical-contact h2{
+    font-size: 26px;
+}
+.medical-contact a {
+    font-size: 20px;
+}
+/* Custom CSS for hospital addresses section */
+.address-section {
+    background-color: #f5f5f5; /* Light gray background */
+    padding: 80px 0;
+  }
+  .address-section h2 {
+    color: #333; /* Dark gray */
+    margin-bottom: 50px;
+  }
+  .hospital-card {
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.1); /* Soft shadow */
+    transition: box-shadow 0.3s ease; /* Smooth shadow transition on hover */
+  }
+  .hospital-card:hover {
+    box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.2); /* Slightly larger shadow on hover */
+  }
+  .hospital-card .card-body {
+    padding: 40px;
+  }
+  .hospital-card .card-title {
+    color: #007bff; /* Blue */
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .hospital-card .card-text {
+    color: #666; /* Gray */
+    font-size: 18px;
+  }
