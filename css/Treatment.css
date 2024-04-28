@@ -6,6 +6,119 @@
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
+@import url('https://fonts.cdnfonts.com/css/noto-sans-math');
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+ /* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); */
+a{
+    text-decoration: none;
+}
+/* css for navbar  */
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    /* font-family: ; */
+    font-family: "Montserrat", sans-serif;
+}
+
+#header {
+    min-height: 100vh;
+    
+}
+
+body {
+    scroll-behavior: smooth;
+    /* font-family: sans-serif; */
+    overflow-x: hidden;
+ 
+}
+.goog-logo-link,
+.goog-logo {
+    display: none !important;
+}
+h1,h2,h3,h4,h5{
+    font-weight: 500;
+}
+
+nav {
+    background: #ffffff;
+    height: 80px;
+    position: sticky;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 100000;
+    width: 100%;
+}
+label img{
+    width: 7rem;
+    height: 7rem;
+    border-radius: 7rem;
+}
+label img {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 7rem;
+}
+label.logo {
+    font-size: 3rem;
+    padding-left: 5rem;
+    line-height: 80px;
+    
+    font-weight: bold;
+}
+label.logo a{
+    color: rgb(8, 8, 8);
+
+}
+nav ul {
+    float: right;
+    margin-right: 2rem;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 60px;
+    margin: 0 5px;
+}
+#google_translate_element select{
+    background-color: #838080;
+    padding: .5rem;
+    color: white;
+    display: inline-block;
+    float: left;
+}
+.goog-logo-link{
+    display: none !important;
+}
+.goo-te-gadget{
+    color: transparent !important;
+}
+.goog-te-banner-frame{
+    display: none !important;
+}
+nav ul li a {
+    color: rgb(12, 109, 255);
+    font-size: 18px;
+    padding: 7px 13px;
+    /* font-family: sans-serif; */
+    border-radius: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+nav ul li a:focus {
+    color: rgb(233, 64, 120);
+}
 
 /* css for navbar  */
 
@@ -283,26 +396,40 @@ color: white;
 }
 
 /* treatment  main end */
-/* footer section start  */
+/* footer  */
 #footer {
-    min-height: 80vh;
-    width: 100%;
     background-color: #e1f5ff;
-    margin-top: 5rem;
 }
 
-.items-section {
+.main-footer {
     display: flex;
-    justify-content: space-around;
-    padding-top: 4rem;
+    justify-content: space-evenly;
 }
-
-.items-section ul ul {
-    font-size: 2rem;
+.footer-items{
+    padding: 2rem;
 }
-
-.items-section ul li {
-    font-size: 1.5rem;
-    padding-top: 1rem;
+.para{
+    margin-top: 1.5rem;
 }
-/* footer section end */
+.footer-items h4{
+    font-size: 20px;
+    font-weight: 600;
+}
+.para p{
+    font-size: 18px;
+    padding: .4rem;
+}
+.para a {
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    display: block;
+    line-height: 40px;
+}
+@media(max-width:758px){
+    .main-footer{
+        flex-direction: column;
+        text-align: center;
+    }
+}
+/* footer end */

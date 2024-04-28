@@ -1,33 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SquadHelp | Treatment</title>
-    <link rel="stylesheet" href="css/Treatment.css">
-    <link rel="shortcut icon" href="img/new-logo.png">
+    <title>Squad Help</title>
 </head>
-<body>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+<link rel="stylesheet" href="/css/StyleResponsive.css">
+<script src="https://kit.fontawesome.com/b7dd379cbd.js" crossorigin="anonymous"></script>
+<link rel="shortcut icon" href="img/new-logo.png">
 
-      <div class="navbar">
-<nav >
-<input type="checkbox" id="check">
-<label for="check" class="checkbtn">
-    <i class="fas fa-bars logo-icon"></i>
-   
-</label>
-        <label class="logo" style="font-family: sans-serif;">
-                <img src="img/SQUAD.png" alt="">
-            Squadhelp</label>
-        <ul>
-            <li  class="home"><a href="index.html">Home</a>
-            </li>
-           
-            <li  class="about"><a href="Testimonial.html">Testimonails</a></li>
-            <li   class="contact" id="contact"><a href="Contact.html">Contact</a></li>
-        </ul>
-    </nav>
-        </div>
+<Style>
+    li,
+    a {
+        cursor: pointer;
+    }
+</Style>
+
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/Treatment.css">
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- {{!-- header  --}} -->
+    <!-- <section id="header"> -->
+    <div class="navbar">
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars logo-icon"></i>
+
+            </label>
+            <label class="logo" style="font-family: sans-serif;">
+                <img src="img/new-logo.png" alt="">
+                <a href="index.html">
+
+                    Squadhelp
+                </a>
+            </label>
+            <ul>
+                <li class="home"><a href="index.html">Home</a></li>
+                <li class="about"><a href="Testimonial.html">Testimonails</a></li>
+                <li class="contact" id="contact"><a href="Contact.html">Get Medical advice</a></li>
+            </ul>
+        </nav>
+    </div>
         <!-- 1st section  -->
         
         <section id="head-main">
@@ -75,54 +98,51 @@
         </section>
         <!-- treatment main end -->
      <!-- footer section  -->
-    <footer id="footer">
-        <div class="items-section">
+    <section id="footer">
+        <div class="main-footer">
+            <div class="item-one-footer footer-items">
+                <h4>Top Treatments</h4>
+                <div class="para">
+                    <a href="Treatment.html">Heart By pass surgery</a>
+                    <a href="Treatment.html">BMT (Bone Marrow Transplant)</a>
+                    <a href="Treatment.html"> Liver Transplant </a>
+                    <a href="Treatment.html">VSD Closre</a>
+                </div>
+            </div>
 
-            <ul>
-                <ul>Top Treatments</ul>
-<li>Heart Bypass Surgery</li>
-<li>BMT (Bone Marrow Transplant)</li>
-<li>Liver Transplant</li>
-<li>VSD Closure</li>
-<li>Coronary artery angiography (CAG)</li>
-<li>ACL Reconstruction</li>
-            </ul>
-          
-            <ul><ul>Doctors</ul>
-        <li>Fortis Memorial Research Institute, Gurgaon</li>
-        <li>Fortis Escorts Heart Institute</li>
-        <li>Indraprastha Apollo Hospital</li>
-        <li>Artemis Hospital</li>
-        <li>BLK-Max Super Speciality Hospital, New Delhi</li>
-    
-    </ul>
-      <ul><ul>Hospital</ul>
-        <li>Best Doctors In New Delhi</li>
-        <li>Best Doctors In Faridabad</li>
-        <li>Best Doctors In Gurgaon</li>
-        <li>Best Doctors In kolkata</li>
-        <li>Best Doctors In Mumbai</li>
-        <li>Best Doctors In Banglore</li>
-        <li>Best Doctors In Karnataka</li>
-        <li>Best Doctors In Turkey</li>
-        <li>Best Doctors In Thailaind</li>
-        <li></li>
-    </ul>
-            <ul><ul>Explore</ul>
-        <li>Curestay</li>
-        <li>Hospals Assured</li>
-        <li>Hospals Assured</li>
-        <li>Healthtrip Blogs</li>
-        <li>Become an Affiliate</li>
-        </ul>
-            <ul><ul>About</ul>
-        <li>About Us</li>
-        <li>Contact Us</li>
-        <li>Terms Of Use</li>
-        <li>Privacy Policy</li>
-        </ul>
+            <div class="item-two-footer footer-items">
+                <h4>Doctors</h4>
+                <div class="para">
+                    <a href="Docotors.html">Fortis Memorial Research institute (Gurgaon)</a>
+                    <a href="Docotors.html">Fortis Escorts Heart Institute</a>
+                    <a href="Docotors.html"> Indraprastha Apollo Hospital</a>
+                    <a href="Docotors.html">Artermis Hospital</a>
+                </div>
+            </div>
+
+            <div class="item-three-footer footer-items">
+                <h4>Hospital</h4>
+                <div class="para">
+                    <a href="Hospital.html">Best Doctors </a>
+                    <a href="Hospital.html">Best Doctors in Faridabad</a>
+                    <a href="Hospital.html"> Best Doctors in Gurgaon</a>
+                    <a href="Hospital.html">Best doctors in noida</a>
+
+                </div>
+            </div>
+
+            <div class="item-four-footer footer-items">
+                <h4>About</h4>
+                <div class="para">
+                    <a href="About.html">About Us</a>
+                    <a href="Contact.html">Contact Us</a>
+                    <a href="About.html">Terms of Use</a>
+                    <a href="About.html">Privacy Policy</a>
+
+                </div>
+            </div>
         </div>
-    </footer>
+    </section>
     <!-- footer section end -->
 </body>
 </html>
