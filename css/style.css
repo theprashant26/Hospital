@@ -1048,3 +1048,13 @@ margin: 3rem;
     }
 }
 /* footer end */
+.custom-card {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+.custom-card:hover {
+    transform: scale(1.1); /* Zoom out effect on hover */
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+.custom-card .img {
+    border: red;
+}
