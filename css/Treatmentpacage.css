@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@import url('https://fonts.cdnfonts.com/css/noto-sans-math');
 * {
     padding: 0;
     margin: 0;
@@ -23,7 +21,7 @@ html {
     overflow-x: hidden;
     scroll-behavior: smooth;
     /* font-family: ; */
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 #header {
@@ -503,3 +501,41 @@ h6 {
         text-align: center;
     }
 }
+/* footer section start  */
+/* footer  */
+#footer {
+    background-color: #e1f5ff;
+}
+
+.main-footer {
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer-items{
+    padding: 2rem;
+}
+.para{
+    margin-top: 1.5rem;
+}
+.footer-items h4{
+    font-size: 20px;
+    font-weight: 600;
+}
+.para p{
+    font-size: 18px;
+    padding: .4rem;
+}
+.para a {
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    display: block;
+    line-height: 40px;
+}
+@media(max-width:758px){
+    .main-footer{
+        flex-direction: column;
+        text-align: center;
+    }
+}
+/* footer end */
