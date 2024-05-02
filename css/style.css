@@ -123,9 +123,9 @@ nav ul li a:focus {
 }
 
 #contact a:hover {
-    border: 2px solid rgb(0, 81, 255);
+    border: 2px solid rgb(8, 8, 8);
     background-color: rgb(255, 255, 255);
-    color: rgb(0, 81, 255);
+    color: rgb(8, 8, 8);
     padding: 10px 20px;
     border-radius: 5px;
 }
@@ -434,7 +434,7 @@ align-items: center;
 
 .profiles{
     /* background-color: rgb(44, 44, 44); */
-    width: 40em;
+    width: 40rem;
     height: 45rem;
 box-shadow: 5px 5px 10px 5px hsl(0, 0%, 90%);
     border-radius: .4rem;
@@ -451,14 +451,14 @@ box-shadow: 5px 5px 10px 5px hsl(0, 0%, 90%);
     text-align: left;
 }
 .img img{
-    width: 40rem;
+    width: 50rem;
     border-radius: 4rem;
-    height: 45rem;
+    height: 50rem;
     padding: 2rem 3rem;
 }
 
 .info-profile p{
-    /* width: 80rem; */
+    width: 80rem;
     text-align: left;
     font-size: 1.5rem;
     padding: 1rem 2rem;
@@ -1069,4 +1069,306 @@ margin: 3rem;
 .fa-linkedin {
     font-size: 20px;
     color: #0077b5;
+}
+/* doctors section  */
+
+.main-head-dc h2{
+    font-size: 3.5rem;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.item-doctor{
+    /* border: 1px solid rgb(0, 0, 0); */
+    box-shadow:5px 5px 5px 5px #ebebeb;
+    width: 50rem;
+    height: 25rem;
+    border-radius: 1.5rem;
+}
+h6{
+    font-weight: 550;
+}
+.lines-doctor{
+display: flex;
+    margin-top: 5rem;
+    justify-content: space-evenly;
+}
+.above-item-doctor{
+    display: flex;
+        justify-content: space-evenly;
+}
+.doctor-name h6{
+    font-size: 2rem;
+margin-top: 2rem;
+}
+.postion{
+    margin-top: 5rem;
+
+}
+.position p{
+    font-size: 1.4rem;
+}
+.location-hospital h6{
+    font-size: 1.9rem;
+
+}
+.exp h6{
+font-size: 1.9rem;
+}
+.exp p{
+    font-size: 1.4rem;
+}
+.surgeries h6{
+    font-size: 1.9rem;
+    
+}
+.surgeries p{
+
+    font-size: 1.4rem;
+}
+.left-item-doctor img{
+    width: 18rem;
+    height:18rem;
+    /* border: 1px solid red; */
+}
+.experiences-main{
+    display: flex;
+    justify-content: space-between;
+}
+.below-item-price p{
+font-size: 1.9rem;
+}
+@media(max-width:758px){
+    .line-one-doctor{
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+    .line-two-doctor{
+        align-items: center;
+        margin: 0;
+        flex-direction: column;
+    }
+    
+    .item-doctor{
+        width: 80%;
+margin-top: 5rem;
+padding: 3.5rem;
+margin: 3rem;
+    }
+
+    h6{
+        text-align: center;
+    }
+    .para-item{
+        text-align: center;
+    }
+    .doctor-name h6{
+        text-align: left;
+    }
+    .location-hospital{
+        margin-top: 2rem;
+    }
+    .location-hospital h6 {
+        text-align: left;
+    }
+    .experiences-main{
+        margin-top: 2rem;
+    }
+    .right-item-doctor{
+      
+    }
+    .location-hospital p{
+        text-align: left;
+    }
+    .experiences-main{
+        width: 80%;
+    }
+    .below-item-price p{
+        text-align: left;
+    }
+    .position p{
+        text-align: left;
+    }
+    .item-doctor{
+        height: 54rem;
+    }
+    .above-item-doctor{
+        flex-direction: column;
+    }
+}
+
+
+/* doctors section  */
+.line-one-doctor {
+    display: flex;
+    margin-top: 5rem;
+    justify-content: space-evenly;
+}
+
+.main-head-dc h2 {
+    font-size: 3.5rem;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.line-two-doctor {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5rem;
+}
+
+.item-doctor {
+    /* border: 1px solid rgb(0, 0, 0); */
+    box-shadow: 5px 5px 5px 5px #ebebeb;
+    width: 55rem;
+    height: 30rem;
+    border-radius: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.above-item-doctor {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.doctor-name h6 {
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+
+.postion {
+    margin-top: 5rem;
+
+}
+
+.position p {
+    font-size: 18px;
+}
+p {
+    font-size: 18px;
+}
+
+.location-hospital h6 {
+    font-size: 1.9rem;
+
+}
+
+.exp h6 {
+    font-size: 1.9rem;
+}
+
+.exp p {
+    font-size: 1.4rem;
+}
+
+.surgeries h6 {
+    font-size: 1.9rem;
+
+}
+
+.surgeries p {
+
+    font-size: 1.4rem;
+}
+
+.left-item-doctor img {
+    width: 18rem;
+    height: 18rem;
+    /* border: 1px solid red; */
+}
+
+.experiences-main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.below-item-price p {
+    font-size: 1.9rem;
+}
+
+@media(max-width:758px) {
+    .line-one-doctor {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+
+    .line-two-doctor {
+        align-items: center;
+        margin: 0;
+        flex-direction: column;
+    }
+
+    .item-doctor {
+        width: 80%;
+        margin-top: 5rem;
+        padding: 3.5rem;
+        margin: 3rem;
+    }
+
+    h6 {
+        text-align: center;
+    }
+
+    .para-item {
+        text-align: center;
+    }
+
+    .doctor-name h6 {
+        text-align: left;
+    }
+
+    .location-hospital {
+        margin-top: 2rem;
+    }
+
+    .location-hospital h6 {
+        text-align: left;
+    }
+
+    .experiences-main {
+        margin-top: 2rem;
+    }
+
+    .right-item-doctor {}
+
+    .location-hospital p {
+        text-align: left;
+    }
+
+    .experiences-main {
+        width: 80%;
+    }
+
+    .below-item-price p {
+        text-align: left;
+    }
+
+    .position p {
+        text-align: left;
+    }
+
+    .item-doctor {
+        height: 65rem;
+    }
+.lines-doctor{
+    flex-direction: column;
+    align-items: center;
+}
+    .above-item-doctor {
+        flex-direction: column;
+    }
+}
+/* 1st section head end */
+.contactbutt {
+    padding: 12px;
+    background-color: rgb(4 54 129);
+    color: white;
+    font-size: 20px;
+    border-radius: 15px;
+}
+.contactbutt:hover {
+    background-color: white;
+    color: rgb(4 54 129);
 }
