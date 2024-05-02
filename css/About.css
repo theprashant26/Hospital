@@ -15,7 +15,7 @@ a{
 /* css for navbar  */
 
 html {
-    font-size: 62.5%;
+    /* font-size: 100%; */
     overflow-x: hidden;
     scroll-behavior: smooth;
     /* font-family: ; */
@@ -414,3 +414,74 @@ nav ul li a:focus {
     font-size: 40px;
     color: rgb(15, 121, 137);
 }
+/* footer section start  */
+/* footer  */
+#footer {
+    background-color: #e1f5ff;
+}
+
+.main-footer {
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer-items{
+    padding: 2rem;
+}
+.para{
+    margin-top: 1.5rem;
+}
+.footer-items h4{
+    font-size: 20px;
+    font-weight: 600;
+}
+.para p{
+    font-size: 18px;
+    padding: .4rem;
+}
+.para a {
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    display: block;
+    line-height: 40px;
+}
+@media(max-width:758px){
+    .main-footer{
+        flex-direction: column;
+        text-align: center;
+    }
+}
+/* footer end */
+/* award section  */
+#award-section{
+    min-height: 50vh;
+    background-color: rgb(255, 249, 235);
+}
+.main-items-award{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.left-award-item{
+}
+.right-award-item{
+
+    margin: 2rem;
+}
+.right-award-item video{
+    width: 40rem;
+    background-color: #373737;
+    height: 45rem;
+    border-radius: 1.4rem;
+}
+.left-award-item h1{
+ 
+   padding: 10rem 5rem;
+    font-size: 5rem;
+}
+@media(max-width:758px){
+    .main-items-award{
+        flex-direction: column;
+    }
+}
+/* award section end */

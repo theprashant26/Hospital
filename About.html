@@ -16,12 +16,59 @@
 <link rel="shortcut icon" href="img/new-logo.png">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-<Style>
-    li,
-    a {
-        cursor: pointer;
+<style>
+    .about-section {
+        padding: 50px 0;
     }
-</Style>
+    .about-section .row {
+        display: flex;
+        align-items: center;
+    }
+    .about-section .content {
+        padding: 20px;
+    }
+    .about-section .image {
+        border-radius: 10px;
+        overflow: hidden;
+        margin-bottom: 20px;
+    }
+    .about-section .image img {
+        width: 100%;
+        height: auto;
+    }
+    .about-section .row.reverse {
+        flex-direction: row-reverse;
+    }
+    @media (min-width: 768px) {
+        .about-section .row {
+            flex-direction: row;
+        }
+    }
+    @media (max-width: 767px) {
+        .about-section .row {
+            flex-direction: column;
+        }
+    }
+    .video-section {
+        padding: 50px 0;
+        background-color: #f8f9fa;
+    }
+    .video-container {
+        position: relative;
+        padding-bottom: 56.25%; /* 16:9 aspect ratio */
+        overflow: hidden;
+        background-color: #373737;
+        height: 45rem;
+        border-radius: 1.4rem;
+    }
+    .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+</style>
 
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <link rel="stylesheet" href="css/About.css">
@@ -50,64 +97,97 @@
             </ul>
         </nav>
     </div>
-    <section class="ourservices">
-        <h2>Facilties we offer</h2>
-        <div class="main-row">
-
-            <div class="main-items">
-                <h3>Experienced doctor</h3>
-                <p>our doctors have very well Experience working in this industry over 10+ years</p>
+    
+    <section class="about-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12 image">
+                    <img src="img/about-us-ss.jpg" alt="About Us Image">
+                </div>
+                <div class="col-md-6 col-sm-12 content">
+                    <h2>About Our Company</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
             </div>
-
-            <div class="main-items">
-                <h3>Affordable rates</h3>
-                <p>Usually its difficult for under priviledged family to bear hospital expensesfor which we offer
-                    affordable services</p>
+            <div class="row reverse">
+                <div class="col-md-6 col-sm-12 image">
+                    <img src="img/about-us-ss.jpg" alt="About Us Image">
+                </div>
+                <div class="col-md-6 col-sm-12 content">
+                    <h2>Our Mission</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
             </div>
-
-            <div class="main-items">
-                <h3>24 hours services</h3>
-                <p>Providing you all the medical care services for 24 hours</p>
-            </div>
-
-            <div class="main-items">
-                <h3>Emergency help</h3>
-                <p>You can call us anytime to avail our services any time any wheere our main motive is to bring a
-                    better country</p>
-            </div>
-
         </div>
     </section>
-    <!-- {{!-- about us  --}} -->
-    <section class="about-us">
-        <div class="about-items">
-            <div class="about-col">
-                <h2>About us</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo itaque corrupti fuga deserunt
-                    odit alias culpa labore eos illum molestiae ratione quam architecto beatae, asperiores eligendi,
-                    dolore laborum inventore sunt deleniti ex eum maxime voluptate dolores. Non, amet officiis
-                    aspernatur explicabo dolorum ipsam consequatur quos inventore porro tenetur dolores, id rerum in,
-                    quis ea? Incidunt, recusandae qui! Quod amet exercitationem quidem voluptate hic vel dolorem,
-                    officia sequi eius repudiandae eos distinctio. Voluptatibus assumenda harum non magni similique
-                    accusantium ipsa soluta?</p>
+    <section class="video-section">
+        <div class="container">
+            <h2 class="text-center" style="font-size: 30px;">Award Recieved By Us</h2>
+            <div class="row mt-5">
+                <div class="col-md-5">
+                    <div class="video-container">
+                        <video src="video/award.mov" controls></video>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <h2>Watch Our Video</h2>
+                    <p style="font-size: 25px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam voluptas, aliquam vero in itaque, atque cupiditate quis, totam facilis libero delectus hic! Beatae necessitatibus cupiditate cumque incidunt repudiandae doloremque quae impedit, sequi nam sit? Sunt velit accusantium mollitia vel, adipisci tenetur, recusandae inventore illo voluptatum error hic itaque aperiam accusamus aliquam quia facere veritatis praesentium maiores, tempora commodi vitae. Ullam nostrum laboriosam debitis veniam natus accusamus aliquid doloribus officia perspiciatis ea explicabo nisi voluptatibus fugit, earum alias blanditiis suscipit inventore repellendus iure consectetur provident? Reiciendis, vero. Ab voluptatibus, laborum possimus sint dignissimos mollitia aperiam inventore quidem. Illum quo distinctio dolores.</p>
+                </div>
             </div>
-
-            <div class="about-col"><img src="img/group-hospital-doctors-over-health-care-clinic-background-89857953.jpg"
-                    alt=""></div>
         </div>
     </section>
-    <div class="container border p-5">
-        <div class="row">
-            <div class="col-lg-5 col-sm-6">
-                <img src="img/about-us-ss.jpg" alt="" class="abtimg" >
+
+    <!-- footer section  -->
+    <section id="footer">
+        <div class="main-footer">
+            <div class="item-one-footer footer-items">
+                <h4>Top Treatments</h4>
+                <div class="para">
+                    <a href="TreatmentPackages.html">Heart By pass surgery</a>
+                    <a href="TreatmentPackages.html">BMT (Bone Marrow Transplant)</a>
+                    <a href="TreatmentPackages.html"> Liver Transplant </a>
+                    <a href="TreatmentPackages.html">VSD Closre</a>
+                </div>
             </div>
-            <div class="col-lg-5 col-sm-6">
-                <h2 style="font-size: 30px;">Our<strong> Services</strong></h2>
-                <h2 class="abth">Healthtrip offers the following services to patients visiting India for treatment</h2>
+
+            <div class="item-two-footer footer-items">
+                <h4>Doctors</h4>
+                <div class="para">
+                    <a href="Docotors.html">Fortis Memorial Research institute (Gurgaon)</a>
+                    <a href="Docotors.html">Fortis Escorts Heart Institute</a>
+                    <a href="Docotors.html"> Indraprastha Apollo Hospital</a>
+                    <a href="Docotors.html">Artermis Hospital</a>
+                </div>
             </div>
-            <div class="col-lg-2"></div>
+
+            <div class="item-three-footer footer-items">
+                <h4>Hospital</h4>
+                <div class="para">
+                    <a href="Hospital.html">Best Doctors </a>
+                    <a href="Hospital.html">Best Doctors in Faridabad</a>
+                    <a href="Hospital.html"> Best Doctors in Gurgaon</a>
+                    <a href="Hospital.html">Best doctors in noida</a>
+
+                </div>
+            </div>
+
+            <div class="item-four-footer footer-items">
+                <h4>About</h4>
+                <div class="para">
+                    <a href="About.html">About Us</a>
+                    <a href="Contact.html">Contact Us</a>
+                    <a href="gallery.html">Gallery</a>
+                    <div class="d-flex">
+                        <a href="https://www.instagram.com/mdakhtar29?igsh=YnkzZHdva3ZvZDdi"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/md.akhtar.31?mibextid=LQQJ4d"><i class="fa-brands fa-facebook mx-4"></i></a>
+                <a href="https://www.linkedin.com/in/md-akhtar-047987b8?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><i class="fa-brands fa-linkedin mx-2"></i></a>
+                    </div>
+
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
+    <!-- footer section end -->
     <script src="js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
