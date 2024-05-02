@@ -3,33 +3,65 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Squad Help</title>
+    <title>SquadHelp | Testimonials</title>
+    <link rel="stylesheet" href="css/Testimonial.css">
+    <script src="https://kit.fontawesome.com/b7dd379cbd.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="img/new-logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+		.gallery-item {
+			position: relative;
+			padding-bottom: 50%;
+			overflow: hidden;
+		}
+
+		.gallery-item img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			transition: transform .3s ease-in-out;
+            border-radius: 10px;
+		}
+
+		.gallery-item:hover img {
+			transform: scale(1.1);
+		}
+
+		.gallery-item-overlay {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			background-color: rgba(0, 0, 0, 0.6);
+			overflow: hidden;
+			width: 100%;
+			height: 0;
+			transition: .5s ease;
+		}
+
+		.gallery-item:hover .gallery-item-overlay {
+			height: 100%;
+		}
+
+		.gallery-item-text {
+			color: white;
+			font-size: 20px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			text-align: center;
+		}
+	</style>
+
 </head>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
-<link rel="stylesheet" href="/css/StyleResponsive.css">
-<script src="https://kit.fontawesome.com/b7dd379cbd.js" crossorigin="anonymous"></script>
-<link rel="shortcut icon" href="img/new-logo.png">
-
-<Style>
-    li,
-    a {
-        cursor: pointer;
-    }
-</Style>
-
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" href="css/gallery.css">
 
 <body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- {{!-- header  --}} -->
-    <!-- <section id="header"> -->
     <div class="navbar">
         <nav>
             <input type="checkbox" id="check">
@@ -46,96 +78,276 @@
             </label>
             <ul>
                 <li class="home"><a href="index.html">Home</a></li>
-                <li class="about"><a href="Testimonial.html">Testimonails</a></li>
-                <li class="contact" id="contact"><a href="Contact.html">Get Medical advice</a></li>
+
+                </li>
+                <li class="gallery"><a href="Testimonial.html">Testimonails</a></li>
+
+                <li class="contact" id="contact"><a href="Contact.html">Get medical advice</a></li>
             </ul>
         </nav>
     </div>
-        <div class="head">
 
-            <h1> Best Prices with best facilties</h1>
+    <div class="container mt-5">
+		<div class="row">
+            <h1 class="text-center">Our Gallery</h1>
+			<div class="col-md-4 col-6 mb-4">
+				<div class="gallery-item">
+					<img src="img/gallery/6.jpg" alt="Image 1">
+					<div class="gallery-item-overlay">
+						<div class="gallery-item-text">
+							<p>Image 1</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 col-6 mb-4">
+				<div class="gallery-item">
+					<img src="img/gallery/7.jpg" alt="Image 2">
+					<div class="gallery-item-overlay">
+						<div class="gallery-item-text">
+							<p>Image 2</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 col-6 mb-4">
+				<div class="gallery-item">
+					<img src="img/gallery/3.jpg" alt="Image 3">
+					<div class="gallery-item-overlay">
+						<div class="gallery-item-text">
+					<p>Image 3</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 col-6 mb-4">
+				<div class="gallery-item">
+					<img src="img/gallery/4.jpg" alt="Image 4">
+					<div class="gallery-item-overlay">
+						<div class="gallery-item-text">
+							<p>Image 4</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 col-6 mb-4">
+				<div class="gallery-item">
+					<img src="img/gallery/5.jpg" alt="Image 5">
+					<div class="gallery-item-overlay">
+						<div class="gallery-item-text">
+							<p>Image 5</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 col-6 mb-4">
+				<div class="gallery-item">
+					<img src="img/gallery/2.jpg" alt="Image 6">
+					<div class="gallery-item-overlay">
+						<div class="gallery-item-text">
+							<p>Image 6</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 col-6 mb-4">
+				<div class="gallery-item">
+					<img src="img/gallery/1.jpg" alt="Image 7">
+					<div class="gallery-item-overlay">
+						<div class="gallery-item-text">
+							<p>Image 7</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 col-6 mb-4">
+				<div class="gallery-item">
+					<img src="img/gallery/8.jpg" alt="Image 8">
+					<div class="gallery-item-overlay">
+						<div class="gallery-item-text">
+							<p>Image 8</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 col-6 mb-4">
+				<div class="gallery-item">
+					<img src="img/gallery/9.jpg" alt="Image 9">
+					<div class="gallery-item-overlay">
+						<div class="gallery-item-text">
+							<p>Image 9</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 col-6 mb-4">
+				<div class="gallery-item">
+					<img src="img/gallery/10.jpg" alt="Image 10">
+					<div class="gallery-item-overlay">
+						<div class="gallery-item-text">
+							<p>Image 10</p>
+						</div>
+					</div>
+			</div>
+			</div>
+			<div class="col-md-4 col-6 mb-4">
+				<div class="gallery-item">
+					<img src="img/gallery/14.jpg" alt="Image 11">
+					<div class="gallery-item-overlay">
+						<div class="gallery-item-text">
+							<p>Image 11</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 col-6 mb-4">
+				<div class="gallery-item">
+					<img src="img/gallery/11.jpg" alt="Image 12">
+					<div class="gallery-item-overlay">
+						<div class="gallery-item-text">
+							<p>Image 12</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 col-6 mb-4">
+				<div class="gallery-item">
+					<img src="img/gallery/12.jpg" alt="Image 13">
+					<div class="gallery-item-overlay">
+						<div class="gallery-item-text">
+							<p>Image 13</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 col-6 mb-4">
+				<div class="gallery-item">
+					<img src="img/gallery/13.jpg" alt="Image 14">
+					<div class="gallery-item-overlay">
+						<div class="gallery-item-text">
+							<p>Image 14</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 col-6 mb-4">
+				<div class="gallery-item">
+					<img src="img/gallery/14.jpg" alt="Image 15">
+					<div class="gallery-item-overlay">
+						<div class="gallery-item-text">
+							<p>Image 15</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 col-6 mb-4">
+				<div class="gallery-item">
+					<img src="img/gallery/15.jpg" alt="Image 16">
+					<div class="gallery-item-overlay">
+						<div class="gallery-item-text">
+							<p>Image 16</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 col-6 mb-4">
+				<div class="gallery-item">
+					<img src="img/gallery/16.jpg" alt="Image 17">
+					<div class="gallery-item-overlay">
+						<div class="gallery-item-text">
+							<p>Image 17</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 col-6 mb-4">
+				<div class="gallery-item">
+					<img src="img/gallery/17.jpg" alt="Image 18">
+					<div class="gallery-item-overlay">
+						<div class="gallery-item-text">
+							<p>Image 18</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 col-6 mb-4">
+				<div class="gallery-item">
+					<img src="img/gallery/18.jpg" alt="Image 19">
+					<div class="gallery-item-overlay">
+						<div class="gallery-item-text">
+							<p>Image 19</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 col-6 mb-4">
+				<div class="gallery-item">
+					<img src="img/gallery/19.jpg" alt="Image 20">
+					<div class="gallery-item-overlay">
+						<div class="gallery-item-text">
+							<p>Image 20</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+    
+    
+<!-- footer section  -->
+<section id="footer">
+    <div class="main-footer">
+        <div class="item-one-footer footer-items">
+            <h4>Top Treatments</h4>
+            <div class="para">
+                <a href="TreatmentPackages.html">Heart By pass surgery</a>
+                <a href="TreatmentPackages.html">BMT (Bone Marrow Transplant)</a>
+                <a href="TreatmentPackages.html"> Liver Transplant </a>
+                <a href="TreatmentPackages.html">VSD Closre</a>
+            </div>
         </div>
 
-    </section>
-    <section id="items-main">
-        <div class="main-row-items">
-            <div class="row-items"></div>
-            <div class="row-items"></div>
-            <div class="row-items"></div>
-            <div class="row-items"></div>
-            <div class="row-items"></div>
-            <div class="row-items"></div>
-        </div>
-
-
-
-
-    </section>
-    <section class="header-2">
-<div class="header-part">
-
-        <h1> Our satisfied Cutomer</h1>
-</div>
-<div class="main-row-items">
-    <div class="row-items"></div>
-    <div class="row-items"></div>
-    <div class="row-items"></div>
-    <div class="row-items"></div>
-    <div class="row-items"></div>
-    <div class="row-items"></div>
-</div>
-
-    </section>
-    <!-- footer section  -->
-    <section id="footer">
-        <div class="main-footer">
-            <div class="item-one-footer footer-items">
-                <h4>Top Treatments</h4>
-                <div class="para">
-                    <a href="TreatmentPackages.html">Heart By pass surgery</a>
-                    <a href="TreatmentPackages.html">BMT (Bone Marrow Transplant)</a>
-                    <a href="TreatmentPackages.html"> Liver Transplant </a>
-                    <a href="TreatmentPackages.html">VSD Closre</a>
-                </div>
-            </div>
-
-            <div class="item-two-footer footer-items">
-                <h4>Doctors</h4>
-                <div class="para">
-                    <a href="Docotors.html">Fortis Memorial Research institute (Gurgaon)</a>
-                    <a href="Docotors.html">Fortis Escorts Heart Institute</a>
-                    <a href="Docotors.html"> Indraprastha Apollo Hospital</a>
-                    <a href="Docotors.html">Artermis Hospital</a>
-                </div>
-            </div>
-
-            <div class="item-three-footer footer-items">
-                <h4>Hospital</h4>
-                <div class="para">
-                    <a href="Hospital.html">Best Doctors </a>
-                    <a href="Hospital.html">Best Doctors in Faridabad</a>
-                    <a href="Hospital.html"> Best Doctors in Gurgaon</a>
-                    <a href="Hospital.html">Best doctors in noida</a>
-
-                </div>
-            </div>
-
-            <div class="item-four-footer footer-items">
-                <h4>About</h4>
-                <div class="para">
-                    <a href="About.html">About Us</a>
-                    <a href="Contact.html">Contact Us</a>
-                    <div class="d-flex">
-                        <a href="https://www.instagram.com/mdakhtar29?igsh=YnkzZHdva3ZvZDdi"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://www.facebook.com/md.akhtar.31?mibextid=LQQJ4d"><i class="fa-brands fa-facebook mx-4"></i></a>
-                <a href="https://www.linkedin.com/in/md-akhtar-047987b8?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><i class="fa-brands fa-linkedin mx-2"></i></a>
-                    </div>
-
-                </div>
+        <div class="item-two-footer footer-items">
+            <h4>Doctors</h4>
+            <div class="para">
+                <a href="Docotors.html">Fortis Memorial Research institute (Gurgaon)</a>
+                <a href="Docotors.html">Fortis Escorts Heart Institute</a>
+                <a href="Docotors.html"> Indraprastha Apollo Hospital</a>
+                <a href="Docotors.html">Artermis Hospital</a>
             </div>
         </div>
-    </section>
-    <!-- footer section end -->
-    <script src="js/script.js"></script>
+
+        <div class="item-three-footer footer-items">
+            <h4>Hospital</h4>
+            <div class="para">
+                <a href="Hospital.html">Best Doctors </a>
+                <a href="Hospital.html">Best Doctors in Faridabad</a>
+                <a href="Hospital.html"> Best Doctors in Gurgaon</a>
+                <a href="Hospital.html">Best doctors in noida</a>
+
+            </div>
+        </div>
+
+        <div class="item-four-footer footer-items">
+            <h4>About</h4>
+            <div class="para">
+                <a href="About.html">About Us</a>
+                <a href="Contact.html">Contact Us</a>
+                <div class="d-flex">
+                    <a href="https://www.instagram.com/mdakhtar29?igsh=YnkzZHdva3ZvZDdi"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/md.akhtar.31?mibextid=LQQJ4d"><i class="fa-brands fa-facebook mx-4"></i></a>
+            <a href="https://www.linkedin.com/in/md-akhtar-047987b8?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><i class="fa-brands fa-linkedin mx-2"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<!-- footer section end -->
+<!--- Jquery JS-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+
 </body>
+
 </html>
