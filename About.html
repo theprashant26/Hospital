@@ -60,23 +60,24 @@
                 flex-direction: column;
             }
         }
-
         .video-section {
             padding: 50px 0;
             background-color: #f8f9fa;
         }
-
+        .video-section .container {
+            margin: 0 auto;
+        }
+        .video-section h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
         .video-container {
             position: relative;
-            padding-bottom: 56.25%;
-            /* 16:9 aspect ratio */
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
             overflow: hidden;
-            background-color: #373737;
-            height: 65rem;
-            border-radius: 1.4rem;
         }
-
-        .video-container iframe {
+        .video-container video {
             position: absolute;
             top: 0;
             left: 0;
@@ -135,24 +136,18 @@
     </section>
     <section class="video-section">
         <div class="container">
-            <h2 class="text-center" style="font-size: 30px;">Award Recieved By Us</h2>
-            <div class="row mt-5">
+            <h2>Watch Our Video</h2>
+            <div class="row">
                 <div class="col-md-6">
                     <div class="video-container">
-                        <video src="video/award.mov" controls></video>
+                        <video controls>
+                            <source src="video/award.mov" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <h2>Watch Our Video</h2>
-                    <p style="font-size: 25px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam
-                        voluptas, aliquam vero in itaque, atque cupiditate quis, totam facilis libero delectus hic!
-                        Beatae necessitatibus cupiditate cumque incidunt repudiandae doloremque quae impedit, sequi nam
-                        sit? Sunt velit accusantium mollitia vel, adipisci tenetur, recusandae inventore illo voluptatum
-                        error hic itaque aperiam accusamus aliquam quia facere veritatis praesentium maiores, tempora
-                        commodi vitae. Ullam nostrum laboriosam debitis veniam natus accusamus aliquid doloribus officia
-                        perspiciatis ea explicabo nisi voluptatibus fugit, earum alias blanditiis suscipit inventore
-                        repellendus iure consectetur provident? Reiciendis, vero. Ab voluptatibus, laborum possimus sint
-                        dignissimos mollitia aperiam inventore quidem. Illum quo distinctio dolores.</p>
+                    <p style="font-size: 18px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id minus nihil harum quisquam eveniet impedit culpa, adipisci omnis similique voluptate quaerat deleniti, dignissimos reprehenderit cupiditate?</p>
                 </div>
             </div>
         </div>
