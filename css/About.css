@@ -452,36 +452,3 @@ nav ul li a:focus {
     }
 }
 /* footer end */
-/* award section  */
-#award-section{
-    min-height: 50vh;
-    background-color: rgb(255, 249, 235);
-}
-.main-items-award{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-.left-award-item{
-}
-.right-award-item{
-
-    margin: 2rem;
-}
-.right-award-item video{
-    width: 40rem;
-    background-color: #373737;
-    height: 45rem;
-    border-radius: 1.4rem;
-}
-.left-award-item h1{
- 
-   padding: 10rem 5rem;
-    font-size: 5rem;
-}
-@media(max-width:758px){
-    .main-items-award{
-        flex-direction: column;
-    }
-}
-/* award section end */
