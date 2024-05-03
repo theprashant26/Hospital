@@ -451,18 +451,24 @@ box-shadow: 5px 5px 10px 5px hsl(0, 0%, 90%);
     text-align: left;
 }
 .img img{
-    width: 50rem;
+    width: 40rem;
     border-radius: 4rem;
-    height: 50rem;
+    height: 45rem;
     padding: 2rem 3rem;
 }
 
 .info-profile p{
-    width: 80rem;
+    /* width: 80rem; */
     text-align: left;
-    font-size: 1.5rem;
-    padding: 1rem 2rem;
+    font-size: 20px;
+    padding: 15px;
     text-justify: distribute;
+}
+.info-profile p:hover {
+    background-color: rgb(4 54 129);
+    color: white;
+    border-top-right-radius: 60px;
+    border-bottom-left-radius: 60px;
 }
 .third-container{
 
@@ -1372,3 +1378,249 @@ p {
     background-color: white;
     color: rgb(4 54 129);
 }
+/* 1st page content  */
+#main-container{
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgb(255, 237, 222);
+}
+.main-container-item{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.left-items{
+    margin-top: 7rem;
+    margin-left: 4rem;
+}
+.left-items h2{
+font-size: 5rem;
+width: 80%;
+
+}
+.left-items p{
+    width: 65%;
+    font-size: 2.9rem;
+    padding-top: 4rem;
+}
+.left-items button{
+    background-color: rgb(216, 165, 121);
+    padding: 1.5rem ;
+    border: none;
+    outline: none;
+    border-radius: 3rem;
+    margin-top: 3rem;
+}
+.left-items button a{
+    color: white;
+    font-size: 2rem;
+}
+.right-item img{
+    width: 50rem;
+    height: 45rem;
+    margin-left: 5rem;
+    margin-top: 8rem;
+}
+@media(max-width:991px){
+    .main-container-item{
+        flex-direction: column;
+    }
+    html{
+        /* font-size: 15%; */
+    }
+    .left-items h2{
+
+    }
+}
+@media(max-width:756px){
+    html{
+        font-size: 50%;
+
+    }
+    .left-items h2{
+        text-align: center;
+        font-size: 4rem;
+        width: 100%;
+    }
+    .left-items p{
+       text-align: center; 
+       font-size: 2rem;
+       padding-bottom: 3rem;
+       width: 100%;
+    }
+    
+}
+@media(max-width:575px){
+    .left-items h2{
+        font-size: 3rem;
+        text-align: center;
+    }
+}
+/* 1st page content end */
+/* search main  */
+.treatment-packages {
+    margin-top: 4rem;
+}
+
+.package {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2rem;
+}
+
+.item-package {
+    box-shadow: 5px 5px 5px 5px #dcdcdc;
+    border: 1px solid rgb(255, 255, 255);
+    width: 60rem;
+    border-radius: 1.5rem;
+
+    height: 38rem;
+}
+.doctor-item h6 {
+    font-size: 20px;
+}
+
+.right-item-profile {
+    margin: 0;
+}
+
+.above-item {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.left-item-img img {
+    width: 25rem;
+    height: 25rem;
+    border-radius: 3.5rem;
+    padding: 2rem;
+}
+
+.below-item-price {
+    border-top: 1px solid rgb(168, 168, 168);
+    margin: 1rem 2rem;
+    text-align: center;
+}
+
+.right-item-profile {
+    margin-top: 2rem;
+}
+
+.head-name-treatment h1 {
+    font-size: 3rem;
+    margin-top: 6rem;
+    text-align: center;
+}
+
+h6 {
+    font-size: 1.7rem;
+}
+
+.btn-item {
+    margin-bottom: 4rem;
+}
+
+.btn-cnct {
+    padding: 1rem;
+    background-color: #0082e6;
+    border-radius: 2.5rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #ffffff;
+    /* margin-bottom: -5rem; */
+}
+
+.btn-cnct:hover {
+    color: rgb(255, 255, 255);
+}
+
+.para-item {
+    font-size: 18px;
+}
+
+.heads-treatment {
+    font-size: 20px;
+}
+
+.below-item-price p {
+    font-size: 1.5rem;
+    margin: 0.5rem 1rem;
+}
+
+.durations-main {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.view-more a {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+}
+.hospital-name h6 {
+    font-size: 20px;
+}
+.duration-item h6 {
+    font-size: 20px;
+}
+@media(max-width:758px) {
+    .right-item-profile {
+        padding: 2rem;
+    }
+
+    .package {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn-item {
+        margin-bottom: 0;
+        margin: 0;
+    }
+
+    .durations-main {
+        justify-content: space-between;
+        width: 80%;
+    }
+
+    .item-package {
+        width: 95%;
+        height: 60rem;
+        margin-top: 2rem;
+    }
+
+    .above-item {
+        flex-direction: column;
+    }
+
+    .para-item {
+        text-align: center;
+    }
+
+    .hospital-name h6 {
+        text-align: left;
+    }
+
+    .hospital-name p {
+        text-align: left;
+
+    }
+
+    .location .para-item {
+        text-align: left;
+    }
+
+    .below-item-price p {
+        text-align: left;
+    }
+
+    .heads-treatment {
+        margin-top: 2rem;
+        text-align: left;
+    }
+}
+
+/* treatments packages end */
