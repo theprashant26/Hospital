@@ -228,7 +228,7 @@ label .logo{
 }
 .countries{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     margin-top: 2rem;
     
@@ -240,7 +240,7 @@ width: 3rem;
 margin-left: -4rem;
 }
 .country{
-    margin-right:  2rem;
+    /* margin-right:  2rem; */
     text-align: center;
 }
 
@@ -1588,7 +1588,7 @@ h6 {
 
     .item-package {
         width: 95%;
-        height: 60rem;
+        height: 70rem;
         margin-top: 2rem;
     }
 
